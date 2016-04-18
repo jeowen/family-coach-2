@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<array>
+		<string>Buy some flowers and enjoy their beauty.</string>
+		<string>Do some gardening.</string>
+		<string>Go bird watching.</string>
+		<string>Go camping.</string>
+		<string>Go fishing.</string>
+		<string>Go for a drive or motorcycle ride in the countryside.</string>
+		<string>Go for a hike or bike ride on a nature trail.</string>
+		<string>Go for a picnic.</string>
+		<string>Go to a lake, river, or beach.</string>
+		<string>Take a stroll at a botanical garden or flower show.</string>
+		<string>Take a trip to a nature reserve or national park.</string>
+		<string>Take a walk in the park.</string>
+		<string>Spend time with animals in a safe way.</string>
+	</array>
+</plist>

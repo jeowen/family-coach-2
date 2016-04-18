@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>menuItems</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What is couples counseling.rtf</string>
+			<key>menuTitle</key>
+			<string>What is couples counseling?</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What is family therapy.rtf</string>
+			<key>menuTitle</key>
+			<string>What is family therapy?</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Reconnecting with your partner.rtf</string>
+			<key>menuTitle</key>
+			<string>Reconnecting with your partner</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Fighting fair.rtf</string>
+			<key>menuTitle</key>
+			<string>Fighting fair</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Impact of PTSD on children.rtf</string>
+			<key>menuTitle</key>
+			<string>Impact of PTSD on children</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Childrens responses to PTSD symptoms.rtf</string>
+			<key>menuTitle</key>
+			<string>Children's responses to PTSD symptoms</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Can children get PTSD from their parents.rtf</string>
+			<key>menuTitle</key>
+			<string>Can children get PTSD from their parents?</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Helping children cope.rtf</string>
+			<key>menuTitle</key>
+			<string>Helping children cope</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Parenting tips.rtf</string>
+			<key>menuTitle</key>
+			<string>Parenting tips</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Are my kids ok.rtf</string>
+			<key>menuTitle</key>
+			<string>Are my kids ok? When to seek outside help</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Should my child have individual counseling.rtf</string>
+			<key>menuTitle</key>
+			<string>Should my child have individual counseling?</string>
+			<key>pageTitle</key>
+			<string>PTSD &amp; Family</string>
+		</dict>
+	</array>
+</dict>
+</plist>

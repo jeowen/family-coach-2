@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<array>
+		<string>Only go to bed when you are sleepy.</string>
+		<string>If you are in bed for 20 minutes and are still not asleep, get up and do something else (without exposing yourself to bright light or a computer/phone/TV screen).</string>
+		<string>Listen to relaxing music.</string>
+		<string>Read something soothing.</string>
+		<string>Have a cup of decaffeinated tea.</string>
+		<string>Have a cup of warm milk.</string>
+		<string>Take some slow, deep breaths through your nose-- do this for 10 minutes. You can use the breathing tool on this app if you would like.</string>
+		<string>Have a light snack if you are hungry- try something low in sugar and alcohol-free.</string>
+		<string>Make sure the room is cool.</string>
+		<string>Try wearing earplugs if there is noise in your environment.</string>
+		<string>If there is light in your environment, try an eyeshade.</string>
+		<string>Make sure the room is dark.</string>
+		<string>Try taking a warm bath an hour or 2 before bed.</string>
+		<string>Make sure you are comfortable and clothing is not constraining.</string>
+		<string>Avoid watching the clock.</string>
+		<string>Let your mind wander. Don't focus too much on the process of falling asleep.</string>
+		<string>If you find yourself worrying, get up and write your worries down, then let them go.</string>
+		<string>Picture a calming safe place: picture yourself by a river, a lake, or in a meadow. Imagine the scene, the sights and sounds and smells, as you drift off. You can use</string>
+		<string>the positive imagery tool on this app if you would like.</string>
+		<string>Feel all the muscles of your body relax, as if sinking into the mattress. You can use the progressive muscle relaxation tool on this app if you would like.</string>
+		<string>Avoid nicotine, caffeine, and alcohol in the evenings.</string>
+		<string>Avoid too much salt in your food.  This can cause you to wake-up thirsty throughout the night.</string>
+		<string>Turn off the TV and computer 30 minutes before bedtime. </string>
+		<string>Develop a relaxing bedtime routine.</string>
+		<string>Get up and have a glass of water.</string>
+		<string>Ensure that your sheets are clean and that your pillow and mattress are comfortable and supportive.</string>
+		<string>Try not to worry about falling asleep; just allow it to happen.</string>
+	</array>
+</plist>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<array>
+		<string>Bake something.</string>
+		<string>Cook a meal for yourself.</string>
+		<string>Dance.</string>
+		<string>Do a crossword or Sudoku puzzle.</string>
+		<string>Do a jigsaw puzzle.</string>
+		<string>Do arts and crafts.</string>
+		<string>Eat something delicious.</string>
+		<string>Have coffee or tea.</string>
+		<string>Knit or do needlepoint.</string>
+		<string>Light some candles.</string>
+		<string>List 5 things you like about yourself.</string>
+		<string>Listen to the radio.</string>
+		<string>Paint or draw.</string>
+		<string>Plan a trip.</string>
+		<string>Play a musical instrument.</string>
+		<string>Play cards.</string>
+		<string>Play with animals.</string>
+		<string>Practice a martial art.</string>
+		<string>Pray, meditate, or practice yoga.</string>
+		<string>Put on an outfit that makes you feel good.</string>
+		<string>Read a relaxing magazine or book.</string>
+		<string>Remember a fun vacation.</string>
+		<string>Remember someone being kind to you.</string>
+		<string>Sew, knit or crochet.</string>
+		<string>Sing around the house.</string>
+		<string>Take a relaxing bath. </string>
+		<string>Take a warm bath or hot tub.</string>
+		<string>Take photographs.</string>
+		<string>Think about someone you love.</string>
+		<string>Watch a movie or TV show.</string>
+		<string>Watch funny videos.</string>
+		<string>Watch sports on TV.</string>
+		<string>Write a poem or story.</string>
+	</array>
+</plist>

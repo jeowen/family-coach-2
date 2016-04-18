@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gfb-Pq-hYj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Reminders-->
+        <scene sceneID="00g-m1-I9Y">
+            <objects>
+                <tableViewController title="Reminders" id="gfb-Pq-hYj" customClass="PTSRemindersViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="1sc-cM-rG7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DatePickerCellIdentifier" rowHeight="162" id="F3k-N5-xR8" userLabel="Assessment Date Picker Cell" customClass="PTSDatePickerTableViewCell">
+                                <rect key="frame" x="0.0" y="50" width="600" height="162"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="F3k-N5-xR8" id="Azy-0J-hDd">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="161"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <datePicker contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="WFI-2Q-chE">
+                                            <rect key="frame" x="0.0" y="-86" width="600" height="216"/>
+                                            <animations/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="162" id="QvB-bW-FU4"/>
+                                            </constraints>
+                                            <date key="date" timeIntervalSinceReferenceDate="470744623.91664201">
+                                                <!--2015-12-02 10:23:43 +0000-->
+                                            </date>
+                                        </datePicker>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="WFI-2Q-chE" secondAttribute="trailing" id="AU4-LK-U4P"/>
+                                        <constraint firstItem="WFI-2Q-chE" firstAttribute="top" secondItem="Azy-0J-hDd" secondAttribute="top" id="Xsh-7J-QXG"/>
+                                        <constraint firstAttribute="bottom" secondItem="WFI-2Q-chE" secondAttribute="bottom" id="dX8-GJ-PbY"/>
+                                        <constraint firstItem="WFI-2Q-chE" firstAttribute="leading" secondItem="Azy-0J-hDd" secondAttribute="leading" id="ii5-on-aaK"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="datePicker" destination="WFI-2Q-chE" id="Wcu-Gq-Xce"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="gfb-Pq-hYj" id="bUo-4T-1OK"/>
+                            <outlet property="delegate" destination="gfb-Pq-hYj" id="afy-gX-wnf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cZv-II-wZV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="443"/>
+        </scene>
+    </scenes>
+</document>

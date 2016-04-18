@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>tip</key>
+		<string>Talking to another person about your problems, or listening to someone else’s problems for a while, can help improve your mood or change the way you think.</string>
+		<key>title</key>
+		<string>Call a family member</string>
+	</dict>
+	<dict>
+		<key>tip</key>
+		<string>Talking to another person about your problems, or listening to someone else’s problems for a while, can help improve your mood or change the way you think.</string>
+		<key>title</key>
+		<string>Call a friend</string>
+	</dict>
+	<dict>
+		<key>tip</key>
+		<string></string>
+		<key>title</key>
+		<string>Cook dinner for someone</string>
+	</dict>
+	<dict>
+		<key>tip</key>
+		<string></string>
+		<key>title</key>
+		<string>Go to a party</string>
+	</dict>
+	<dict>
+		<key>tip</key>
+		<string></string>
+		<key>title</key>
+		<string>Join a book club or reading group</string>
+	</dict>
+	<dict>
+		<key>tip</key>
+		<string>Join a club to play a sport, such as bowling, basketball, or soccer.</string>
+		<key>title</key>
+		<string>Join a sports club</string>
+	</dict>
+	<dict>
+		<key>tip</key>
+		<string></string>
+		<key>title</key>
+		<string>Make a small gift for someone</string>
+	</dict>
+	<dict>
+		<key>tip</key>
+		<string>Talking to another person about your problems, or listening to someone else’s problems for a while, can help improve your mood or change the way you think.</string>
+		<key>title</key>
+		<string>Visit a family member</string>
+	</dict>
+	<dict>
+		<key>tip</key>
+		<string>Talking to another person about your problems, or listening to someone else’s problems for a while, can help improve your mood or change the way you think.</string>
+		<key>title</key>
+		<string>Visit a friend</string>
+	</dict>
+	<dict>
+		<key>tip</key>
+		<string></string>
+		<key>title</key>
+		<string>Write a letter</string>
+	</dict>
+</array>
+</plist>

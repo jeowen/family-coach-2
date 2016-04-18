@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="go8-aI-NEi">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Song Player View Controller-->
+        <scene sceneID="wix-fn-sBF">
+            <objects>
+                <viewController id="go8-aI-NEi" customClass="PTSSongPlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="itq-FN-2EX"/>
+                        <viewControllerLayoutGuide type="bottom" id="tQ1-Az-Qvh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jhY-u3-CO9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ovh-D9-G0d">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="92C-zQ-6CX" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="382"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6z7-vb-IiD">
+                                                <rect key="frame" x="20" y="8" width="560" height="366"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="260" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjt-9Q-i6V" customClass="PTSDynamicTypeLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="62"/>
+                                                        <animations/>
+                                                        <string key="text">Pay attention entirely to the sounds of the song. Do not label the sounds or think about their meanings. If your mind wanders, return to listening as soon as you realize it.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="259" verticalHuggingPriority="259" text="No songs are on your list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I3S-Nr-6MA" customClass="PTSDynamicTypeCalloutLabel">
+                                                        <rect key="frame" x="0.0" y="82" width="560" height="18"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="258" verticalHuggingPriority="258" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RuY-bp-lXX">
+                                                        <rect key="frame" x="0.0" y="120" width="560" height="64"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="uX7-Z5-YIZ">
+                                                                <rect key="frame" x="225" y="0.0" width="111" height="64"/>
+                                                                <animations/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                                <state key="normal">
+                                                                    <string key="title">Artist Name
+Song Name</string>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="handleCurrentSongButtonPressed:" destination="go8-aI-NEi" eventType="touchUpInside" id="f32-Ny-7sE"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SI5-Mf-tAN">
+                                                        <rect key="frame" x="0.0" y="204" width="560" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7M-ky-vo5">
+                                                                <rect key="frame" x="233" y="0.0" width="95" height="30"/>
+                                                                <animations/>
+                                                                <state key="normal" title="Edit Song List"/>
+                                                                <connections>
+                                                                    <segue destination="8tF-Bo-Xzf" kind="show" identifier="ShowSongsSegue" id="EVY-A9-9Eb"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bN3-pQ-Cvg">
+                                                        <rect key="frame" x="0.0" y="254" width="560" height="48"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This song must be played using the Music app." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zw7-Ec-kLn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="560" height="18"/>
+                                                                <animations/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="5tb-Dx-oYq">
+                                                                <rect key="frame" x="0.0" y="18" width="560" height="30"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H65-Mi-76P">
+                                                                        <rect key="frame" x="220" y="0.0" width="121" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Play in Music App"/>
+                                                                        <connections>
+                                                                            <action selector="handlePlayMusicAppButtonPressed:" destination="go8-aI-NEi" eventType="touchUpInside" id="ZtI-zb-TZR"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <animations/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jfZ-GI-okl" customClass="PTSAudioControlsView">
+                                                        <rect key="frame" x="0.0" y="322" width="560" height="44"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="wantsSeparator" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <animations/>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="6z7-vb-IiD" secondAttribute="trailing" id="8gM-tx-sgF"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="6z7-vb-IiD" secondAttribute="bottom" id="GnA-7B-IKN"/>
+                                            <constraint firstItem="6z7-vb-IiD" firstAttribute="top" secondItem="92C-zQ-6CX" secondAttribute="topMargin" id="c82-sh-9Rn"/>
+                                            <constraint firstItem="6z7-vb-IiD" firstAttribute="leading" secondItem="92C-zQ-6CX" secondAttribute="leadingMargin" id="f10-wP-jhd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="92C-zQ-6CX" secondAttribute="bottom" id="eFM-Ys-EeO"/>
+                                    <constraint firstAttribute="trailing" secondItem="92C-zQ-6CX" secondAttribute="trailing" id="gWC-EA-WS2"/>
+                                    <constraint firstItem="92C-zQ-6CX" firstAttribute="top" secondItem="ovh-D9-G0d" secondAttribute="top" id="qQ6-PM-FXt"/>
+                                    <constraint firstItem="92C-zQ-6CX" firstAttribute="leading" secondItem="ovh-D9-G0d" secondAttribute="leading" id="sVL-aj-Byw"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ovh-D9-G0d" secondAttribute="trailing" id="2dr-av-MWt"/>
+                            <constraint firstItem="tQ1-Az-Qvh" firstAttribute="top" secondItem="ovh-D9-G0d" secondAttribute="bottom" id="FjY-b0-02I"/>
+                            <constraint firstItem="92C-zQ-6CX" firstAttribute="width" secondItem="jhY-u3-CO9" secondAttribute="width" id="P20-VU-d0L"/>
+                            <constraint firstItem="ovh-D9-G0d" firstAttribute="leading" secondItem="jhY-u3-CO9" secondAttribute="leading" id="Xc0-4h-Xe2"/>
+                            <constraint firstItem="ovh-D9-G0d" firstAttribute="top" secondItem="jhY-u3-CO9" secondAttribute="top" id="tUl-T5-58j"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="audioControlsView" destination="jfZ-GI-okl" id="rY0-9b-5nK"/>
+                        <outlet property="currentSongButton" destination="uX7-Z5-YIZ" id="2gA-o2-KGr"/>
+                        <outlet property="editSongListButton" destination="U7M-ky-vo5" id="KZ8-au-jfn"/>
+                        <outlet property="emptyListLabel" destination="I3S-Nr-6MA" id="BuU-gb-Rdb"/>
+                        <outlet property="musicAppStackView" destination="bN3-pQ-Cvg" id="qKw-ei-P4d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iyD-Gi-ZBO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="383"/>
+        </scene>
+        <!--PTSSongsStoryboard-->
+        <scene sceneID="T7z-pE-Qsl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSSongsStoryboard" id="8tF-Bo-Xzf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vq1-NI-tMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1258" y="383"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>caption</key>
+		<string>Start this exercise by sitting comfortably in a chair with your feet squarely on the floor.</string>
+		<key>end</key>
+		<string>00:07</string>
+		<key>start</key>
+		<string>00:00</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Sit with your posture firm, but not rigid.</string>
+		<key>end</key>
+		<string>00:12</string>
+		<key>start</key>
+		<string>00:07</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Make sure your head feels centered over your shoulders, and place your arms in a comfortable position.</string>
+		<key>end</key>
+		<string>00:20</string>
+		<key>start</key>
+		<string>00:12</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>This posture helps you stay alert and focused.</string>
+		<key>end</key>
+		<string>00:33</string>
+		<key>start</key>
+		<string>00:20</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>When we eat, we tend to put food into our mouths without much thought.</string>
+		<key>end</key>
+		<string>00:39</string>
+		<key>start</key>
+		<string>00:33</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>You might be amazed to discover how much deeper your experience of eating a small piece of fruit can be if you treat it mindfully.</string>
+		<key>end</key>
+		<string>00:48</string>
+		<key>start</key>
+		<string>00:39</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>First, take a raisin or another small piece of fruit, and eat it the way you normally do,</string>
+		<key>end</key>
+		<string>00:55</string>
+		<key>start</key>
+		<string>00:48</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>that is, just pop it into your mouth, chew, and swallow.</string>
+		<key>end</key>
+		<string>01:08</string>
+		<key>start</key>
+		<string>00:55</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now, get another one of that same kind of fruit.</string>
+		<key>end</key>
+		<string>01:11</string>
+		<key>start</key>
+		<string>01:08</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Place it in front of you and examine it.</string>
+		<key>end</key>
+		<string>01:17</string>
+		<key>start</key>
+		<string>01:11</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Notice any wrinkles, and the texture of its skin. Notice where it is smooth, rough, or furry, and the various shapes any wrinkles or bumps may form.</string>
+		<key>end</key>
+		<string>01:33</string>
+		<key>start</key>
+		<string>01:17</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now take out another piece of fruit and place it next to the first, and notice how unalike they are.</string>
+		<key>end</key>
+		<string>01:49</string>
+		<key>start</key>
+		<string>01:33</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>No two pieces of fruit are identical.</string>
+		<key>end</key>
+		<string>01:54</string>
+		<key>start</key>
+		<string>01:49</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Are these two fruits the same size?</string>
+		<key>end</key>
+		<string>01:59</string>
+		<key>start</key>
+		<string>01:54</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Think about the fruits in term of the space they take up in the room, in the world, and in the universe.</string>
+		<key>end</key>
+		<string>02:22</string>
+		<key>start</key>
+		<string>01:59</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Think about their size in relation to each other, as well.</string>
+		<key>end</key>
+		<string>02:36</string>
+		<key>start</key>
+		<string>02:22</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now pick up one of the fruits and roll it around between your fingers.</string>
+		<key>end</key>
+		<string>02:51</string>
+		<key>start</key>
+		<string>02:36</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Feel the texture on the outside of the fruit.</string>
+		<key>end</key>
+		<string>02:54</string>
+		<key>start</key>
+		<string>02:51</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Feel any sticky or moist traces it leaves on your fingers.</string>
+		<key>end</key>
+		<string>03:12</string>
+		<key>start</key>
+		<string>02:54</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Place the fruit in your mouth.</string>
+		<key>end</key>
+		<string>03:15</string>
+		<key>start</key>
+		<string>03:12</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Roll it around inside your mouth, over and under your tongue.</string>
+		<key>end</key>
+		<string>03:26</string>
+		<key>start</key>
+		<string>03:15</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Hide it in the crevices between your jaws and your cheeks. Don’t chew it for at least 30 seconds or so.</string>
+		<key>end</key>
+		<string>04:04</string>
+		<key>start</key>
+		<string>03:26</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>When you are ready, slowly eat the fruit and notice the way it tastes.</string>
+		<key>end</key>
+		<string>04:12</string>
+		<key>start</key>
+		<string>04:04</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Note the way it feels on your teeth as you chew,</string>
+		<key>end</key>
+		<string>04:16</string>
+		<key>start</key>
+		<string>04:12</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>and how it feels as you swallow.</string>
+		<key>end</key>
+		<string>04:38</string>
+		<key>start</key>
+		<string>04:16</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>When you are ready, eat the second piece of fruit, but this time, eat it really slowly.</string>
+		<key>end</key>
+		<string>04:46</string>
+		<key>start</key>
+		<string>04:38</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Chew the fruit as many times as you can, until it turns into mush in your mouth, and then swallow.</string>
+		<key>end</key>
+		<string>05:02</string>
+		<key>start</key>
+		<string>04:46</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Is the flavor different when it is eaten this way than it was last time?</string>
+		<key>end</key>
+		<string>05:07</string>
+		<key>start</key>
+		<string>05:02</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>How is it different?</string>
+		<key>end</key>
+		<string>05:09</string>
+		<key>start</key>
+		<string>05:07</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>What does it feel like in your mouth as it falls apart?</string>
+		<key>end</key>
+		<string>05:14</string>
+		<key>start</key>
+		<string>05:09</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>How does it feel as you finally swallow it?</string>
+		<key>end</key>
+		<string>05:19</string>
+		<key>start</key>
+		<string>05:14</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>How does it compare with the first piece of fruit?</string>
+		<key>end</key>
+		<string>05:34</string>
+		<key>start</key>
+		<string>05:19</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>What’s different when you eat the fruit mindfully rather than simply popping it in your mouth and slurping it down?</string>
+		<key>end</key>
+		<string>05:50</string>
+		<key>start</key>
+		<string>05:34</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>When you are finished, sit or stand for a moment and bring your attention to your breath, noticing how your chest and belly naturally rise and fall as you breathe, before you go on with your day.</string>
+		<key>end</key>
+		<string>06:04</string>
+		<key>start</key>
+		<string>05:50</string>
+	</dict>
+</array>
+</plist>

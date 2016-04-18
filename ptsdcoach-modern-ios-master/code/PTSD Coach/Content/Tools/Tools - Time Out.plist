@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<array>
+		<dict>
+			<key>tip</key>
+			<string>Take a walk</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Do some deep breathing for 10 minutes or more </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Exercise (bike, hike, lift weights, swim, run) </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Do some yard work or gardening</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Tell yourself something empowering, like "I can handle this without losing my temper." </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Draw or paint  </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Call a friend or loved one for support </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Call your therapist for support </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Stretch and take slow, deep breaths</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Remind yourself that you can cope with this. </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Meditate </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Pray </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Think of how someone you trust would advise you.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Spend time with a pet.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Take a shower or a bath to relax.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Think about how you want to be an example to others in your life- children, etc.</string>
+		</dict>
+	</array>
+</plist>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Breathing</string>
+			<key>tip</key>
+			<string>Sit quietly and focus all of your attention on your in-breath and then your out-breath.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>The space around you – Colors</string>
+			<key>tip</key>
+			<string>Look around and focus your attention on the colors around you, noticing as many colors as you can.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>The space around you – Smells</string>
+			<key>tip</key>
+			<string>Focus all of your attention on the smells in your environment.  </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>The space around you – Sounds</string>
+			<key>tip</key>
+			<string>Focus on and listen carefully to the many sounds in your environment.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>The space around you – Temperature</string>
+			<key>tip</key>
+			<string>Focus all of your attention of the temperature of the air on your skin.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Eating</string>
+			<key>tip</key>
+			<string>While you are eating, focus all of your attention on the sensations of the food in your mouth while you chew very slowly.  </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Brushing your teeth</string>
+			<key>tip</key>
+			<string>Brush your teeth and focus your attention on all of the sensations, tastes, and smells of this activity.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Walking</string>
+			<key>tip</key>
+			<string>Walk slowly, focusing your attention on what it feels like to take each step.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Object</string>
+			<key>tip</key>
+			<string>Pick up any small object off the ground and focus all of your attention on the texture of the object and the feel of it in your hand.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Pet an animal</string>
+			<key>tip</key>
+			<string>Pet an animal that is quiet and calm.  Focus all of your attention on the sensations on your hand.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Attach yourself to the earth</string>
+			<key>tip</key>
+			<string>With your feet shoulder width apart, close your eyes and imagine that you are growing roots into the earth, making you strong and stable.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Ice cube</string>
+			<key>tip</key>
+			<string>Grab an ice cube and focus all of your attention on the sensations that go with it, cold, wet, and tingling.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Name what you see</string>
+			<key>tip</key>
+			<string>Look around you and name what you see.  Start with large objects, then move to smaller and smaller objects.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Focus on touch</string>
+			<key>tip</key>
+			<string>Rub your hands together, clap your hands.  Focus all of your attention on the feelings and sounds that you experience.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Reorientation</string>
+			<key>tip</key>
+			<string>Remind yourself where you are, what today's date is, when were you born, and what you did yesterday.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Call a friend</string>
+			<key>tip</key>
+			<string>Call a friend and discuss some activity you did together recently.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Past success</string>
+			<key>tip</key>
+			<string>Remember what you did to successfully get past a previous painful experience.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Baby steps</string>
+			<key>tip</key>
+			<string>Ask yourself and answer: What would be a small sign that things are getting a little better?</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Suck on a peppermint</string>
+			<key>tip</key>
+			<string>Slowly suck on a mint and describe the taste and your reaction in detail to yourself.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Stamp your feet on the ground</string>
+			<key>tip</key>
+			<string>Stamp your feet on the ground. Feel the force.  Hear the sounds.  Notice.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Feel your clothes on your skin</string>
+			<key>tip</key>
+			<string>Pay attention to the sensation of your clothes touching your skin.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Feel your hands</string>
+			<key>tip</key>
+			<string>Put your hands together and notice the sensations of the skin-on-skin contact.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Hear Others</string>
+			<key>tip</key>
+			<string>Tune into the voices of others around you. Only pay attention to the sounds of others’ voices.</string>
+		</dict>
+	</array>
+</plist>

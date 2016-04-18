@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>menuItems</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What Is PTSD.rtf</string>
+			<key>menuTitle</key>
+			<string>What is PTSD?</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - How does PTSD develop.rtf</string>
+			<key>menuTitle</key>
+			<string>How does PTSD develop?</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - How common is PTSD.rtf</string>
+			<key>menuTitle</key>
+			<string>How common is PTSD?</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Who develops PTSD.rtf</string>
+			<key>menuTitle</key>
+			<string>Who develops PTSD?</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - How long does PTSD last.rtf</string>
+			<key>menuTitle</key>
+			<string>How long does PTSD last?</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Problems related to PTSD.rtf</string>
+			<key>menuTitle</key>
+			<string>Problems related to PTSD</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - PTSD treatment.rtf</string>
+			<key>menuTitle</key>
+			<string>PTSD treatment</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Do I have PTSD.rtf</string>
+			<key>menuTitle</key>
+			<string>Do I have PTSD?</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - I have PTSD.rtf</string>
+			<key>menuTitle</key>
+			<string>I have PTSD...</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Im embarrassed to have PTSD.rtf</string>
+			<key>menuTitle</key>
+			<string>I'm embarrassed to have PTSD</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Social isolation.rtf</string>
+			<key>menuTitle</key>
+			<string>Social isolation</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Sleep problems - Nightmares.rtf</string>
+			<key>menuTitle</key>
+			<string>Sleep problems: Nightmares</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Sleep problems - Insomnia.rtf</string>
+			<key>menuTitle</key>
+			<string>Sleep problems: Insomnia</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What do I do if I get triggered.rtf</string>
+			<key>menuTitle</key>
+			<string>What do I do if I get triggered?</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What is dissociation.rtf</string>
+			<key>menuTitle</key>
+			<string>What is dissociation?</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - I am avoiding things.rtf</string>
+			<key>menuTitle</key>
+			<string>I am avoiding things</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - I dont trust people.rtf</string>
+			<key>menuTitle</key>
+			<string>I don't trust people</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - I cant control my temper.rtf</string>
+			<key>menuTitle</key>
+			<string>I can't control my temper</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Im always on edge.rtf</string>
+			<key>menuTitle</key>
+			<string>I'm always on edge</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - I feel sad all the time.rtf</string>
+			<key>menuTitle</key>
+			<string>I feel sad all the time</string>
+			<key>pageTitle</key>
+			<string>About PTSD</string>
+		</dict>
+	</array>
+</dict>
+</plist>

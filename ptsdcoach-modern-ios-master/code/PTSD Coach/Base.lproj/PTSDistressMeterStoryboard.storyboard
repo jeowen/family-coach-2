@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="sFI-xU-pp6">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Distress Meter-->
+        <scene sceneID="zgp-G8-814">
+            <objects>
+                <viewController id="gN8-pM-DcE" customClass="PTSDistressMeterViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AlM-Ry-CDE"/>
+                        <viewControllerLayoutGuide type="bottom" id="48Z-cr-BXo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6vS-MA-HvP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H2I-iD-kbx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GLb-YE-8Ed" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="291"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="jab-UB-hbY">
+                                                <rect key="frame" x="20" y="8" width="560" height="275"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCh-Yy-390" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="83"/>
+                                                        <animations/>
+                                                        <string key="text">You can rate your distress level on a scale of 0 to 10. Distress includes everything negative you are feeling, including anger, sadness, fear, physical pain, and so on, all in one score. Zero means no distress at all and ten means the worst distress you could imagine. </string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This will help you monitor your distress levels and figure out which tools in this app work best for you." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3f-60-SZf" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="103" width="560" height="41"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EAF-t0-Uvb">
+                                                        <rect key="frame" x="0.0" y="164" width="560" height="61"/>
+                                                        <subviews>
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="xPI-1l-xIY">
+                                                                <rect key="frame" x="128" y="0.0" width="304" height="31"/>
+                                                                <animations/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="300" id="lwC-LF-4SD"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <action selector="handleSliderValueChanged:" destination="gN8-pM-DcE" eventType="valueChanged" id="1Xh-HO-1if"/>
+                                                                </connections>
+                                                            </slider>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vz7-hC-gcs">
+                                                                <rect key="frame" x="276" y="40" width="9" height="21"/>
+                                                                <animations/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Gdu-h0-ZI9">
+                                                        <rect key="frame" x="0.0" y="245" width="560" height="30"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="tdu-4N-OQg">
+                                                                <rect key="frame" x="219" y="0.0" width="122" height="30"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dn0-Jq-yeD">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Skip"/>
+                                                                        <connections>
+                                                                            <action selector="handleSkipButtonPressed:" destination="gN8-pM-DcE" eventType="touchUpInside" id="xb9-ME-hOb"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZ0-lY-Pa6">
+                                                                        <rect key="frame" x="90" y="0.0" width="32" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Next"/>
+                                                                        <connections>
+                                                                            <action selector="handleNextButtonPressed:" destination="gN8-pM-DcE" eventType="touchUpInside" id="Bhf-MU-p4U"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <animations/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                </subviews>
+                                                <animations/>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="jab-UB-hbY" firstAttribute="top" secondItem="GLb-YE-8Ed" secondAttribute="topMargin" id="4tm-Ah-eol"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="jab-UB-hbY" secondAttribute="trailing" id="J7n-CJ-oCP"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="jab-UB-hbY" secondAttribute="bottom" id="Lfg-Js-R0I"/>
+                                            <constraint firstItem="jab-UB-hbY" firstAttribute="leading" secondItem="GLb-YE-8Ed" secondAttribute="leadingMargin" id="le5-Pf-O1f"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="GLb-YE-8Ed" firstAttribute="top" secondItem="H2I-iD-kbx" secondAttribute="top" id="spb-RY-yAd"/>
+                                    <constraint firstAttribute="bottom" secondItem="GLb-YE-8Ed" secondAttribute="bottom" id="tXG-H3-Icr"/>
+                                    <constraint firstAttribute="trailing" secondItem="GLb-YE-8Ed" secondAttribute="trailing" id="vlW-U8-Nrg"/>
+                                    <constraint firstItem="GLb-YE-8Ed" firstAttribute="leading" secondItem="H2I-iD-kbx" secondAttribute="leading" id="zMR-GF-TmA"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="H2I-iD-kbx" firstAttribute="top" secondItem="6vS-MA-HvP" secondAttribute="top" id="0aC-Dq-H6F"/>
+                            <constraint firstAttribute="bottom" secondItem="H2I-iD-kbx" secondAttribute="bottom" id="Vrq-Op-9OX"/>
+                            <constraint firstItem="H2I-iD-kbx" firstAttribute="leading" secondItem="6vS-MA-HvP" secondAttribute="leading" id="Z1b-qJ-yHN"/>
+                            <constraint firstItem="GLb-YE-8Ed" firstAttribute="width" secondItem="6vS-MA-HvP" secondAttribute="width" id="gX2-Ty-i3D"/>
+                            <constraint firstAttribute="trailing" secondItem="H2I-iD-kbx" secondAttribute="trailing" id="vCG-uY-MqY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Distress Meter" id="fOB-FY-YfY">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ffG-n8-gl3"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" style="done" id="h5v-xb-kLZ">
+                            <connections>
+                                <segue destination="Ewd-nX-5DQ" kind="unwind" unwindAction="unwindToManageSymptoms:" id="fFl-gu-x1e"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="EaM-Hi-whU">
+                            <connections>
+                                <segue destination="6UV-Wt-gdE" kind="presentation" identifier="ShowDistressHelpSegue" id="OzB-8F-2wh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="instructionsLabel" destination="nCh-Yy-390" id="JEl-q4-oCR"/>
+                        <outlet property="nextButton" destination="uZ0-lY-Pa6" id="5SW-SY-j8k"/>
+                        <outlet property="ratingLabel" destination="Vz7-hC-gcs" id="Ce0-Ie-b99"/>
+                        <outlet property="skipButton" destination="Dn0-Jq-yeD" id="dfg-Cy-EC8"/>
+                        <outlet property="slider" destination="xPI-1l-xIY" id="nlH-hK-SQp"/>
+                        <segue destination="c80-1N-z2s" kind="show" identifier="ShowHighDistressSegue" id="ODK-4d-JWf"/>
+                        <segue destination="zaW-X2-RLj" kind="show" identifier="ShowDistressOutcomeSegue" id="ky5-bz-vfn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bIM-ZY-t0j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ewd-nX-5DQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="813"/>
+        </scene>
+        <!--PTSHelpViewerStoryboard-->
+        <scene sceneID="6xa-PG-q1E">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSHelpViewerStoryboard" id="6UV-Wt-gdE" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3X-1F-a1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428.5" y="317"/>
+        </scene>
+        <!--Distress Meter Outcome-->
+        <scene sceneID="Gog-qW-UbM">
+            <objects>
+                <viewController id="zaW-X2-RLj" userLabel="Distress Meter Outcome" customClass="PTSDistressMeterOutcomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mwu-CP-Wz7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ejp-ru-vGZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="To1-l9-wc4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzW-K0-YHD">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VeM-fh-7Vw" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="326"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mYp-Xp-lyz">
+                                                <rect key="frame" x="20" y="8" width="560" height="310"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KcO-oD-gxk" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="104"/>
+                                                        <animations/>
+                                                        <string key="text">Okay, it looks like after [name of tool] you are actually more distressed. This might be good to remember for the future, since you shouldn’t do things that don’t work for you. But remember, some of these tools take time or practice to really work, or may only relieve certain types of problems, so don’t write this one off just yet.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbi-xC-JJB" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="124" width="560" height="62"/>
+                                                        <animations/>
+                                                        <string key="text">If a tool continues to not work for you, you may want to “give it a thumbs down" by tapping the thumbs down button the next time you're given this tool. That way, it will be less likely to come up again.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Since you are still stressed, maybe you should try another tool." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PjQ-Bf-RYO" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="206" width="560" height="20"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D4G-gU-9o0">
+                                                        <rect key="frame" x="0.0" y="246" width="560" height="64"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Owp-6Z-asT">
+                                                                <rect key="frame" x="212" y="0.0" width="136" height="64"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W1Y-jp-3J5">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="136" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Use This Tool Again"/>
+                                                                        <connections>
+                                                                            <action selector="handleRepeatToolButtonPressed:" destination="zaW-X2-RLj" eventType="touchUpInside" id="Lbl-7P-bGz"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siV-yS-Ytq">
+                                                                        <rect key="frame" x="0.0" y="34" width="136" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Try Another Tool"/>
+                                                                        <connections>
+                                                                            <action selector="handleNewToolButtonPressed:" destination="zaW-X2-RLj" eventType="touchUpInside" id="Qq7-xY-6Ej"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                                <animations/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                </subviews>
+                                                <animations/>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="mYp-Xp-lyz" firstAttribute="top" secondItem="VeM-fh-7Vw" secondAttribute="topMargin" id="6uw-uA-Kxg"/>
+                                            <constraint firstItem="mYp-Xp-lyz" firstAttribute="leading" secondItem="VeM-fh-7Vw" secondAttribute="leadingMargin" id="CnX-MN-GcI"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="mYp-Xp-lyz" secondAttribute="bottom" id="MHg-AA-bAh"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="mYp-Xp-lyz" secondAttribute="trailing" id="c3j-w7-48K"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="VeM-fh-7Vw" secondAttribute="trailing" id="DwC-tG-T3a"/>
+                                    <constraint firstAttribute="bottom" secondItem="VeM-fh-7Vw" secondAttribute="bottom" id="R93-JT-NJX"/>
+                                    <constraint firstItem="VeM-fh-7Vw" firstAttribute="leading" secondItem="kzW-K0-YHD" secondAttribute="leading" id="VXV-vg-uxl"/>
+                                    <constraint firstItem="VeM-fh-7Vw" firstAttribute="top" secondItem="kzW-K0-YHD" secondAttribute="top" id="yg4-sv-xf0"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="kzW-K0-YHD" secondAttribute="bottom" id="CvA-29-3Gr"/>
+                            <constraint firstItem="kzW-K0-YHD" firstAttribute="top" secondItem="To1-l9-wc4" secondAttribute="topMargin" id="H6w-Dd-RWE"/>
+                            <constraint firstItem="VeM-fh-7Vw" firstAttribute="width" secondItem="To1-l9-wc4" secondAttribute="width" id="Sc4-Ik-w5r"/>
+                            <constraint firstItem="kzW-K0-YHD" firstAttribute="leading" secondItem="To1-l9-wc4" secondAttribute="leading" id="UHF-gg-T6f"/>
+                            <constraint firstAttribute="trailing" secondItem="kzW-K0-YHD" secondAttribute="trailing" id="bOQ-7f-rMf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Distress" id="Tto-tj-u4p">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="ZGB-NV-qhl"/>
+                        <barButtonItem key="leftBarButtonItem" title="Close" style="done" id="7I2-yM-vhe">
+                            <connections>
+                                <segue destination="hGG-vP-HFS" kind="unwind" unwindAction="unwindToManageSymptoms:" id="YoE-Jg-mRe"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="continueSessionWithNewToolButton" destination="siV-yS-Ytq" id="4cQ-j7-8yy"/>
+                        <outlet property="continueSessionWithSameToolButton" destination="W1Y-jp-3J5" id="LtU-lV-V8u"/>
+                        <outlet property="stackView" destination="mYp-Xp-lyz" id="oMt-qI-S4Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="meZ-vk-eSg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="hGG-vP-HFS" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="1584"/>
+        </scene>
+        <!--High Distress Warning-->
+        <scene sceneID="atg-Ew-QBJ">
+            <objects>
+                <viewController id="c80-1N-z2s" userLabel="High Distress Warning" customClass="PTSDistressMeterHighDistressViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bju-gx-l2M"/>
+                        <viewControllerLayoutGuide type="bottom" id="gJU-VG-iI3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mU6-2I-svR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pY8-RG-0by">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LFS-3d-kh3" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="141"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="njv-ZG-MN6">
+                                                <rect key="frame" x="20" y="8" width="560" height="125"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="That’s a very high distress level. It may be best for you to get some immediate support. Would you like to talk to someone now?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="98z-V8-eXD" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="41"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="FOB-wS-wG2">
+                                                        <rect key="frame" x="0.0" y="61" width="560" height="64"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ez-wX-Cjs">
+                                                                <rect key="frame" x="191" y="0.0" width="179" height="30"/>
+                                                                <animations/>
+                                                                <state key="normal" title="Yes, talk to someone now "/>
+                                                                <connections>
+                                                                    <segue destination="xz5-b3-cQR" kind="show" identifier="ShowDistressCrisisResourcesSegue" id="e2B-ss-uEB"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5DT-4a-32q">
+                                                                <rect key="frame" x="219" y="34" width="123" height="30"/>
+                                                                <animations/>
+                                                                <state key="normal" title="No, give me a tool"/>
+                                                                <connections>
+                                                                    <action selector="handleShowToolButtonPressed:" destination="c80-1N-z2s" eventType="touchUpInside" id="XGC-t7-OjL"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                </subviews>
+                                                <animations/>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="njv-ZG-MN6" firstAttribute="top" secondItem="LFS-3d-kh3" secondAttribute="topMargin" id="dcV-GO-vYK"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="njv-ZG-MN6" secondAttribute="trailing" id="el0-OM-1ni"/>
+                                            <constraint firstItem="njv-ZG-MN6" firstAttribute="leading" secondItem="LFS-3d-kh3" secondAttribute="leadingMargin" id="knA-ZF-d6S"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="njv-ZG-MN6" secondAttribute="bottom" id="mAL-Nk-RAQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="LFS-3d-kh3" secondAttribute="bottom" id="5vd-mx-1aq"/>
+                                    <constraint firstItem="LFS-3d-kh3" firstAttribute="top" secondItem="pY8-RG-0by" secondAttribute="top" id="MI6-br-aYw"/>
+                                    <constraint firstItem="LFS-3d-kh3" firstAttribute="leading" secondItem="pY8-RG-0by" secondAttribute="leading" id="WUp-Yx-DX9"/>
+                                    <constraint firstAttribute="trailing" secondItem="LFS-3d-kh3" secondAttribute="trailing" id="Y37-vL-2UJ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pY8-RG-0by" firstAttribute="leading" secondItem="mU6-2I-svR" secondAttribute="leading" id="1hF-Yf-rwg"/>
+                            <constraint firstItem="LFS-3d-kh3" firstAttribute="width" secondItem="mU6-2I-svR" secondAttribute="width" id="5j4-M2-uAY"/>
+                            <constraint firstAttribute="trailing" secondItem="pY8-RG-0by" secondAttribute="trailing" id="Nxa-Qx-RmO"/>
+                            <constraint firstItem="pY8-RG-0by" firstAttribute="top" secondItem="mU6-2I-svR" secondAttribute="top" id="OZy-2E-naf"/>
+                            <constraint firstAttribute="bottom" secondItem="pY8-RG-0by" secondAttribute="bottom" id="g1K-Ru-4k3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crisis" id="ezE-ZM-j2H">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rz8-QG-S8z"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FM0-vo-biL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1709" y="813"/>
+        </scene>
+        <!--Crisis Resources-->
+        <scene sceneID="4v0-MW-8Rl">
+            <objects>
+                <viewController id="xz5-b3-cQR" userLabel="Crisis Resources" customClass="PTSDistressCrisisResourcesViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KgK-kH-5Ko"/>
+                        <viewControllerLayoutGuide type="bottom" id="0M5-jp-OZF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4WF-of-lXt">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aD9-wh-Cce">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <animations/>
+                                <connections>
+                                    <segue destination="U5X-kW-c0M" kind="embed" identifier="ContactsEmbeddedSegue" id="lhn-Zj-HcC"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aD9-wh-Cce" firstAttribute="bottom" secondItem="0M5-jp-OZF" secondAttribute="top" id="4Dy-5l-GEZ"/>
+                            <constraint firstItem="aD9-wh-Cce" firstAttribute="leading" secondItem="4WF-of-lXt" secondAttribute="leading" id="GpW-Oz-d8N"/>
+                            <constraint firstItem="aD9-wh-Cce" firstAttribute="top" secondItem="4WF-of-lXt" secondAttribute="top" id="fPr-ch-bpu"/>
+                            <constraint firstAttribute="trailing" secondItem="aD9-wh-Cce" secondAttribute="trailing" id="hGD-VF-ka9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Crisis Resources" id="aSy-uf-0Kh">
+                        <barButtonItem key="leftBarButtonItem" title="Close" style="done" id="o6X-bc-fFT">
+                            <connections>
+                                <segue destination="oGn-YH-XpD" kind="unwind" unwindAction="unwindToManageSymptoms:" id="nux-cN-hUZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lnj-py-1IM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oGn-YH-XpD" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2438" y="813"/>
+        </scene>
+        <!--PTSContactsStoryboard-->
+        <scene sceneID="zfr-QO-Na7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSContactsStoryboard" id="U5X-kW-c0M" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xO7-DI-Dvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2993.5" y="813"/>
+        </scene>
+        <!--Tools Navigation Controller-->
+        <scene sceneID="N8l-w6-rR7">
+            <objects>
+                <navigationController toolbarHidden="NO" id="sFI-xU-pp6" customClass="PTSToolsNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NNW-rb-S25">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="aSN-Jy-r18">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="gN8-pM-DcE" kind="relationship" relationship="rootViewController" id="KmN-kb-IK2"/>
+                        <segue destination="6UC-Qd-kMH" kind="unwind" identifier="SegueIdentifierUnwindToRerateDistress" unwindAction="unwindToRerateDistress:" id="Kt6-4n-apa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7q-CS-X9D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="6UC-Qd-kMH" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="813"/>
+        </scene>
+    </scenes>
+</document>

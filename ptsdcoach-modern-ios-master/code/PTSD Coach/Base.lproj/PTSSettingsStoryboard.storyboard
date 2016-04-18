@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="mkf-XA-Nyg">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Settings - Root-->
+        <scene sceneID="SVw-k2-Abc">
+            <objects>
+                <tableViewController id="sWP-zD-rd2" userLabel="Settings - Root" customClass="PTSSettingsRootViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="tpV-be-epN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="delegate" destination="sWP-zD-rd2" id="0Sm-fT-uPA"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Settings" id="6El-8L-TKE">
+                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="9KE-Gw-Abu">
+                            <connections>
+                                <action selector="saveSettingsAndDismiss:" destination="sWP-zD-rd2" id="Kwd-1b-CM3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="AYf-DP-hsD" kind="show" identifier="SegueIdentifierShowPersonalize" id="j5S-X5-7XD"/>
+                        <segue destination="6dl-GJ-xAI" kind="show" identifier="SegueIdentifierShowManageData" id="xO7-7i-boC"/>
+                        <segue destination="ioZ-Ny-2hd" kind="show" identifier="SegueIdentifierShowAbout" id="X2z-kN-6qu"/>
+                        <segue destination="eef-mE-lTI" kind="show" identifier="SegueIdentifierShowReminders" id="xkr-kI-vdx"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQc-fn-bbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2988" y="-2152"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9Nu-do-prF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mkf-XA-Nyg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sYB-4z-Oiu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="sWP-zD-rd2" kind="relationship" relationship="rootViewController" id="NWv-c4-e3y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="01c-0s-BNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2176" y="-2152"/>
+        </scene>
+        <!--PTSRemindersStoryboard-->
+        <scene sceneID="Uju-2y-rad">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSRemindersStoryboard" id="eef-mE-lTI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g01-aW-JeD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3950.5" y="-2987"/>
+        </scene>
+        <!--Personalize-->
+        <scene sceneID="aOL-iQ-goq">
+            <objects>
+                <tableViewController storyboardIdentifier="PersonalizeViewControllerIdentifier" id="AYf-DP-hsD" customClass="PTSPersonalizeViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="3E8-np-vjh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="AYf-DP-hsD" id="J04-MG-V6p"/>
+                            <outlet property="delegate" destination="AYf-DP-hsD" id="vpE-yp-fHc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Personalize" id="hec-Mv-3mR">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Bgx-Lt-ahe"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YcD-eg-XL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4154" y="-2580"/>
+        </scene>
+        <!--Manage Data-->
+        <scene sceneID="y2R-qI-JI3">
+            <objects>
+                <tableViewController id="6dl-GJ-xAI" customClass="PTSManageDataViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="r1s-to-yVs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="delegate" destination="6dl-GJ-xAI" id="kfS-Qe-Rzg"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Manage Data" id="RMt-Qh-QlT"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cec-wg-hXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4156" y="-1830"/>
+        </scene>
+        <!--Settings - About-->
+        <scene sceneID="Pqt-bx-b0u">
+            <objects>
+                <viewController id="ioZ-Ny-2hd" userLabel="Settings - About" customClass="PTSSegmentedTextViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="About PTSD Coach" id="27c-qE-OsP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10D-Ep-9dH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4154" y="-908"/>
+        </scene>
+    </scenes>
+</document>

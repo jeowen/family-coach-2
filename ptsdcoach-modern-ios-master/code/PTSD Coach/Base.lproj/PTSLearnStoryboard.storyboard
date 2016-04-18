@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Bem-Bl-H7S">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Learn - Root-->
+        <scene sceneID="DQq-De-ON1">
+            <objects>
+                <tableViewController title="Learn" id="bvm-X1-al0" userLabel="Learn - Root" customClass="PTSLearnRootViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="cOF-2D-QLd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="delegate" destination="bvm-X1-al0" id="N1B-qJ-p6I"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Learn" id="Wb9-hL-QP0">
+                        <barButtonItem key="leftBarButtonItem" title="Home" style="done" id="DqP-he-ywJ">
+                            <connections>
+                                <action selector="showHomeScreen:" destination="7xu-o3-WJL" id="nCh-tQ-iGh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="JiV-WX-rm3" kind="show" identifier="ShowContentMenuSegue" id="2da-qz-0ux"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xu-o3-WJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="185"/>
+        </scene>
+        <!--Section Title-->
+        <scene sceneID="mSP-6a-2ms">
+            <objects>
+                <tableViewController id="JiV-WX-rm3" customClass="PTSContentMenuViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="12q-pa-58x">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="JiV-WX-rm3" id="ccz-ng-Hj9"/>
+                            <outlet property="delegate" destination="JiV-WX-rm3" id="oxp-cw-DNX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Section Title" id="O7Q-3L-igD">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="6Ov-0Z-8eT"/>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Twn-Cz-pbo" kind="show" identifier="ShowSegmentedTextViewSegue" id="1Tt-iK-NOX"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="itp-I6-3SY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="969" y="185"/>
+        </scene>
+        <!--Segmented Text View Controller-->
+        <scene sceneID="u33-OO-vvY">
+            <objects>
+                <viewController id="Twn-Cz-pbo" customClass="PTSSegmentedTextViewController" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDB-vp-jRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="185"/>
+        </scene>
+        <!--Learn-->
+        <scene sceneID="zn1-po-hgj">
+            <objects>
+                <navigationController title="Learn" id="Bem-Bl-H7S" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Learn" image="TabBar - Learn Icon" id="MVQ-Sf-Ohj"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SLu-Xi-RY0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bvm-X1-al0" kind="relationship" relationship="rootViewController" id="3iM-e8-fnk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qyc-zW-Ig5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-499" y="185"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabBar - Learn Icon" width="14" height="21"/>
+    </resources>
+</document>

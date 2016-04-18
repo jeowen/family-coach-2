@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<array>
+		<dict>
+			<key>tip</key>
+			<string>Take a big breath.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Breathe.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Manage your anger.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>I can’t change the world.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Count to 10 and breathe.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Dig deep; find calm and stability. </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Don’t buy into this situation.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Don’t let it get to you.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Don’t pay attention.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Don't bite.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Don't go there.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Easy does it.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>You can get through it.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>How would (person you respect) handle this?</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>I can’t control what other people do.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>It will be over soon.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>It’s in the past.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>It’s not a big thing; I don’t need to get upset.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>It’s not worth it.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Keep your eye on the prize.  </string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Leave it alone.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Let it be.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Let it go.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Slow down.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Stay the course.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Stop! Just stop.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>This, too, will pass.</string>
+		</dict>
+		<dict>
+			<key>tip</key>
+			<string>Use your tools!</string>
+		</dict>
+	</array>
+</plist>

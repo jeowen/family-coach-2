@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Mpf-oH-7Zx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Home - Root View-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController id="9pv-A4-QxB" userLabel="Home - Root View" customClass="PTSHomeRootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fhq-PD-QVz" userLabel="Learn Container">
+                                <rect key="frame" x="20" y="84" width="270" height="214"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSg-YM-ECc">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="185"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="BSg-YM-ECc" secondAttribute="height" multiplier="347:346" id="9JQ-yL-v3B"/>
+                                        </constraints>
+                                        <state key="normal" image="Home - Learn Button"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="9JQ-yL-v3B"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="showLearnSection:" destination="W5J-7L-Pyd" eventType="touchUpInside" id="q0m-pr-THV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Learn" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbH-ZA-oZH">
+                                        <rect key="frame" x="279" y="189" width="43" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.95453477443609025" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rbH-ZA-oZH" firstAttribute="top" relation="greaterThanOrEqual" secondItem="BSg-YM-ECc" secondAttribute="bottom" constant="4" id="3KG-E2-X2i"/>
+                                    <constraint firstItem="BSg-YM-ECc" firstAttribute="top" secondItem="Fhq-PD-QVz" secondAttribute="top" id="785-hF-wPr"/>
+                                    <constraint firstItem="rbH-ZA-oZH" firstAttribute="centerX" secondItem="Fhq-PD-QVz" secondAttribute="centerX" id="Coo-xK-JKe"/>
+                                    <constraint firstItem="BSg-YM-ECc" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Fhq-PD-QVz" secondAttribute="leading" id="MJP-1g-PLn"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BSg-YM-ECc" secondAttribute="trailing" id="Nop-Ua-5ue"/>
+                                    <constraint firstItem="rbH-ZA-oZH" firstAttribute="centerX" secondItem="BSg-YM-ECc" secondAttribute="centerX" id="er2-hw-QPD"/>
+                                    <constraint firstAttribute="bottom" secondItem="rbH-ZA-oZH" secondAttribute="bottom" constant="4" id="zVO-Ht-SpM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7v-bV-ZW0" userLabel="Track Symptoms Container">
+                                <rect key="frame" x="310" y="84" width="270" height="214"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Track Symptoms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtZ-CN-Tuj">
+                                        <rect key="frame" x="254" y="189" width="129" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vFv-Rh-cF3">
+                                        <rect key="frame" x="16" y="0.0" width="244" height="230"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="vFv-Rh-cF3" secondAttribute="height" multiplier="211:163" id="IyB-ka-w7d"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Home - Track Symptoms Button"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="IyB-ka-w7d"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="showTrackSymptomsSection:" destination="W5J-7L-Pyd" eventType="touchUpInside" id="BeF-dm-1kp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.95453477443609025" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vFv-Rh-cF3" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H7v-bV-ZW0" secondAttribute="leading" id="2m0-O1-sbB"/>
+                                    <constraint firstItem="vFv-Rh-cF3" firstAttribute="top" secondItem="H7v-bV-ZW0" secondAttribute="top" id="AHL-7G-LlR"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="vFv-Rh-cF3" secondAttribute="trailing" id="PUA-Bh-i2b"/>
+                                    <constraint firstItem="GtZ-CN-Tuj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vFv-Rh-cF3" secondAttribute="bottom" constant="4" id="hj8-Te-Zhj"/>
+                                    <constraint firstItem="GtZ-CN-Tuj" firstAttribute="centerX" secondItem="H7v-bV-ZW0" secondAttribute="centerX" id="q18-WK-9r1"/>
+                                    <constraint firstItem="GtZ-CN-Tuj" firstAttribute="centerX" secondItem="vFv-Rh-cF3" secondAttribute="centerX" id="xpt-m9-Vyh"/>
+                                    <constraint firstAttribute="bottom" secondItem="GtZ-CN-Tuj" secondAttribute="bottom" constant="4" id="zYO-lQ-bBL"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AHL-7G-LlR"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaU-aI-0E6" userLabel="Get Support Container">
+                                <rect key="frame" x="310" y="318" width="270" height="213"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get Support" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BfG-nV-CxD">
+                                        <rect key="frame" x="88" y="188" width="94" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnO-od-W7b">
+                                        <rect key="frame" x="62" y="0.0" width="147" height="184"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bnO-od-W7b" secondAttribute="height" multiplier="337:424" id="DN0-DN-3Mc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Home - Get Support Button"/>
+                                        <connections>
+                                            <action selector="showSupportSection:" destination="W5J-7L-Pyd" eventType="touchUpInside" id="d9X-fD-ran"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.95453477443609025" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BfG-nV-CxD" firstAttribute="centerX" secondItem="vaU-aI-0E6" secondAttribute="centerX" id="AE0-vf-wJl"/>
+                                    <constraint firstItem="bnO-od-W7b" firstAttribute="top" secondItem="vaU-aI-0E6" secondAttribute="top" id="HhW-Ij-a3Z"/>
+                                    <constraint firstItem="BfG-nV-CxD" firstAttribute="top" relation="greaterThanOrEqual" secondItem="bnO-od-W7b" secondAttribute="bottom" constant="4" id="Z8f-Ll-5Ev"/>
+                                    <constraint firstItem="BfG-nV-CxD" firstAttribute="centerX" secondItem="bnO-od-W7b" secondAttribute="centerX" id="gDu-Py-NQU"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bnO-od-W7b" secondAttribute="trailing" id="iHK-Vq-91Y"/>
+                                    <constraint firstItem="bnO-od-W7b" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="vaU-aI-0E6" secondAttribute="leading" id="jbg-oW-mxk"/>
+                                    <constraint firstAttribute="bottom" secondItem="BfG-nV-CxD" secondAttribute="bottom" constant="4" id="sYs-qk-PER"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="31i-On-2bc" userLabel="Manage Symptoms Container">
+                                <rect key="frame" x="20" y="318" width="270" height="213"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Take Action" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hhF-kW-Z8R">
+                                        <rect key="frame" x="61" y="188" width="148" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oWM-K4-cF7">
+                                        <rect key="frame" x="29" y="0.0" width="213" height="184"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="oWM-K4-cF7" secondAttribute="height" multiplier="401:346" id="OEH-NX-cGE"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="Home - Manage Symptoms Button"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="OEH-NX-cGE"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="showManageSymptomsSection:" destination="W5J-7L-Pyd" eventType="touchUpInside" id="UBv-ol-gNm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.95453477443609025" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="hhF-kW-Z8R" firstAttribute="centerX" secondItem="oWM-K4-cF7" secondAttribute="centerX" id="5Ci-dw-AlY"/>
+                                    <constraint firstItem="hhF-kW-Z8R" firstAttribute="top" relation="greaterThanOrEqual" secondItem="oWM-K4-cF7" secondAttribute="bottom" constant="4" id="Kro-we-du1"/>
+                                    <constraint firstItem="hhF-kW-Z8R" firstAttribute="centerX" secondItem="31i-On-2bc" secondAttribute="centerX" id="NOf-1E-hiR"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oWM-K4-cF7" secondAttribute="trailing" id="S1F-Bw-ZNf"/>
+                                    <constraint firstItem="oWM-K4-cF7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="31i-On-2bc" secondAttribute="leading" id="b4i-YS-ep0"/>
+                                    <constraint firstAttribute="bottom" secondItem="hhF-kW-Z8R" secondAttribute="bottom" constant="4" id="gZC-Hm-EZV"/>
+                                    <constraint firstItem="oWM-K4-cF7" firstAttribute="top" secondItem="31i-On-2bc" secondAttribute="top" id="lLJ-DE-tBj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="31i-On-2bc" firstAttribute="height" secondItem="Fhq-PD-QVz" secondAttribute="height" id="3ds-rZ-gsB"/>
+                            <constraint firstAttribute="trailing" secondItem="vaU-aI-0E6" secondAttribute="trailing" constant="20" id="3k0-Av-qCw"/>
+                            <constraint firstItem="31i-On-2bc" firstAttribute="top" secondItem="Fhq-PD-QVz" secondAttribute="bottom" constant="20" id="5Of-2C-xWj"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="vaU-aI-0E6" secondAttribute="bottom" constant="20" id="5dw-5o-oIx"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="31i-On-2bc" secondAttribute="bottom" constant="20" id="CEH-Cj-Sw0"/>
+                            <constraint firstItem="Fhq-PD-QVz" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="20" id="Jll-t8-sLw"/>
+                            <constraint firstItem="H7v-bV-ZW0" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="20" id="KV0-4h-Rhv"/>
+                            <constraint firstItem="Fhq-PD-QVz" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" id="Ovu-Jh-cei"/>
+                            <constraint firstItem="31i-On-2bc" firstAttribute="width" secondItem="Fhq-PD-QVz" secondAttribute="width" id="P82-16-1dQ"/>
+                            <constraint firstItem="vaU-aI-0E6" firstAttribute="height" secondItem="Fhq-PD-QVz" secondAttribute="height" id="Php-dR-OFn"/>
+                            <constraint firstItem="vaU-aI-0E6" firstAttribute="top" secondItem="H7v-bV-ZW0" secondAttribute="bottom" constant="20" id="U59-xg-jY0"/>
+                            <constraint firstItem="vaU-aI-0E6" firstAttribute="leading" secondItem="31i-On-2bc" secondAttribute="trailing" constant="20" id="Uvf-bo-DaE"/>
+                            <constraint firstItem="vaU-aI-0E6" firstAttribute="width" secondItem="Fhq-PD-QVz" secondAttribute="width" id="X96-HK-g39"/>
+                            <constraint firstItem="H7v-bV-ZW0" firstAttribute="width" secondItem="Fhq-PD-QVz" secondAttribute="width" id="Ymt-O0-Kh5"/>
+                            <constraint firstItem="vFv-Rh-cF3" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="244:230" id="gXz-IR-vPK"/>
+                            <constraint firstItem="H7v-bV-ZW0" firstAttribute="leading" secondItem="Fhq-PD-QVz" secondAttribute="trailing" constant="20" id="jMu-Yw-z9W"/>
+                            <constraint firstItem="H7v-bV-ZW0" firstAttribute="height" secondItem="Fhq-PD-QVz" secondAttribute="height" id="jmk-Zk-Yq8"/>
+                            <constraint firstItem="BSg-YM-ECc" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="200:300" id="kUy-gi-889"/>
+                            <constraint firstItem="31i-On-2bc" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="20" id="tuL-sQ-S3A"/>
+                            <constraint firstAttribute="trailing" secondItem="H7v-bV-ZW0" secondAttribute="trailing" constant="20" id="vHc-PI-k43"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kUy-gi-889"/>
+                                <exclude reference="gXz-IR-vPK"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="PTSD Family Coach" id="0MG-Pt-fwR">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="3s0-wr-quY">
+                            <connections>
+                                <action selector="showSettingsStoryboard:" destination="W5J-7L-Pyd" id="cr0-8D-Vnp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1462" y="-2152"/>
+        </scene>
+        <!--Home - Navigation Controller-->
+        <scene sceneID="qU0-hr-MyM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Mpf-oH-7Zx" userLabel="Home - Navigation Controller" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="TabBar - Home Icon" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Xz-xI-X7n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="G5r-L5-dBi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Hb-rp-Uu9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650" y="-2152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Home - Get Support Button" width="243" height="255"/>
+        <image name="Home - Learn Button" width="347" height="346"/>
+        <image name="Home - Manage Symptoms Button" width="221" height="229"/>
+        <image name="Home - Track Symptoms Button" width="244" height="230"/>
+        <image name="TabBar - Home Icon" width="22" height="22"/>
+    </resources>
+</document>

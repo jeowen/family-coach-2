@@ -1,0 +1,694 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>caption</key>
+		<string>Start this exercise by finding a comfortable position sitting in a chair, or lying on a bed or the floor.</string>
+		<key>end</key>
+		<string>00:10</string>
+		<key>start</key>
+		<string>00:00</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Close your eyes and take a few deep breaths.</string>
+		<key>end</key>
+		<string>00:15</string>
+		<key>start</key>
+		<string>00:10</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Relax.</string>
+		<key>end</key>
+		<string>00:26</string>
+		<key>start</key>
+		<string>00:15</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Don't let yourself drift off to sleep during this exercise, but allow yourself to rest.</string>
+		<key>end</key>
+		<string>00:40</string>
+		<key>start</key>
+		<string>00:26</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now slowly bring your awareness to the tips of your fingers. </string>
+		<key>end</key>
+		<string>00:47</string>
+		<key>start</key>
+		<string>00:40</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Feel your fingers.</string>
+		<key>end</key>
+		<string>00:53</string>
+		<key>start</key>
+		<string>00:47</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now, rub your fingertips together.</string>
+		<key>end</key>
+		<string>00:55</string>
+		<key>start</key>
+		<string>00:53</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>How do they feel?</string>
+		<key>end</key>
+		<string>01:00</string>
+		<key>start</key>
+		<string>00:55</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Can you feel the small indentations that are your fingerprints?</string>
+		<key>end</key>
+		<string>01:05</string>
+		<key>start</key>
+		<string>01:00</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Take your time and try to feel them.</string>
+		<key>end</key>
+		<string>01:09</string>
+		<key>start</key>
+		<string>01:05</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>What do they feel like?</string>
+		<key>end</key>
+		<string>01:20</string>
+		<key>start</key>
+		<string>01:09</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Are your fingertips raw from lots of work or are they smooth?</string>
+		<key>end</key>
+		<string>01:26</string>
+		<key>start</key>
+		<string>01:20</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>How does it feel to rub them together?</string>
+		<key>end</key>
+		<string>01:29</string>
+		<key>start</key>
+		<string>01:26</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Notice the sensations.</string>
+		<key>end</key>
+		<string>01:41</string>
+		<key>start</key>
+		<string>01:29</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now rest your fingers where they were before.</string>
+		<key>end</key>
+		<string>01:45</string>
+		<key>start</key>
+		<string>01:41</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>What are they touching?</string>
+		<key>end</key>
+		<string>01:48</string>
+		<key>start</key>
+		<string>01:45</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Are they resting on a blanket, on the arms of your chair, on your legs or stomach, or something else?</string>
+		<key>end</key>
+		<string>01:56</string>
+		<key>start</key>
+		<string>01:48</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>What does that feel like?</string>
+		<key>end</key>
+		<string>01:59</string>
+		<key>start</key>
+		<string>01:56</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Is it soft or hard?</string>
+		<key>end</key>
+		<string>02:03</string>
+		<key>start</key>
+		<string>01:59</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Does it have any other distinguishing features or textures?</string>
+		<key>end</key>
+		<string>02:10</string>
+		<key>start</key>
+		<string>02:03</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Take the time to completely absorb the way these objects feel to your fingertips.</string>
+		<key>end</key>
+		<string>02:24</string>
+		<key>start</key>
+		<string>02:10</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now bring attention to your hands and arms. What do they feel like?</string>
+		<key>end</key>
+		<string>02:31</string>
+		<key>start</key>
+		<string>02:24</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Perhaps they are relaxed and heavy.</string>
+		<key>end</key>
+		<string>02:36</string>
+		<key>start</key>
+		<string>02:31</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Perhaps they are tense from work or stress.</string>
+		<key>end</key>
+		<string>02:42</string>
+		<key>start</key>
+		<string>02:36</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Either way is okay.</string>
+		<key>end</key>
+		<string>02:45</string>
+		<key>start</key>
+		<string>02:42</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>There is no need to judge; simply observe the feelings in your arms and hands.</string>
+		<key>end</key>
+		<string>02:54</string>
+		<key>start</key>
+		<string>02:45</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Are there any aches or pains?</string>
+		<key>end</key>
+		<string>02:58</string>
+		<key>start</key>
+		<string>02:54</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Take note of these, but don't fixate on them. Simply notice the pain and move on.</string>
+		<key>end</key>
+		<string>03:18</string>
+		<key>start</key>
+		<string>02:58</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Move your attention down to your toes now.</string>
+		<key>end</key>
+		<string>03:23</string>
+		<key>start</key>
+		<string>03:18</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Wiggle them around a little. Are they in shoes or socks?</string>
+		<key>end</key>
+		<string>03:28</string>
+		<key>start</key>
+		<string>03:23</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Are they free to move about?</string>
+		<key>end</key>
+		<string>03:31</string>
+		<key>start</key>
+		<string>03:28</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Move your toes back and forth feeling whatever is beneath them.</string>
+		<key>end</key>
+		<string>03:36</string>
+		<key>start</key>
+		<string>03:31</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>How does it feel?</string>
+		<key>end</key>
+		<string>03:41</string>
+		<key>start</key>
+		<string>03:36</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Can you tell what it is just by feeling?</string>
+		<key>end</key>
+		<string>03:46</string>
+		<key>start</key>
+		<string>03:41</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Just notice the sensations as you bring your awareness to your feet.</string>
+		<key>end</key>
+		<string>04:01</string>
+		<key>start</key>
+		<string>03:46</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now shift your attention, and notice how your head is positioned.</string>
+		<key>end</key>
+		<string>04:06</string>
+		<key>start</key>
+		<string>04:01</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>If you are sitting, is your head aligned with your spine or is it drooping, resting near your neck and chest.</string>
+		<key>end</key>
+		<string>04:12</string>
+		<key>start</key>
+		<string>04:06</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Without trying to change the position of your head, simply notice where it is positioned.</string>
+		<key>end</key>
+		<string>04:19</string>
+		<key>start</key>
+		<string>04:12</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>There is no right way for your head to be.</string>
+		<key>end</key>
+		<string>04:22</string>
+		<key>start</key>
+		<string>04:19</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Just let it be where it is.</string>
+		<key>end</key>
+		<string>04:26</string>
+		<key>start</key>
+		<string>04:22</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now attend to the sensations in your head and neck.</string>
+		<key>end</key>
+		<string>04:35</string>
+		<key>start</key>
+		<string>04:26</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Do you have any pain?</string>
+		<key>end</key>
+		<string>04:40</string>
+		<key>start</key>
+		<string>04:35</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Are your neck and head relaxed?</string>
+		<key>end</key>
+		<string>04:54</string>
+		<key>start</key>
+		<string>04:40</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>What about your face? How does your face feel?</string>
+		<key>end</key>
+		<string>05:00</string>
+		<key>start</key>
+		<string>04:54</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>There are all kinds of sensations to explore here.</string>
+		<key>end</key>
+		<string>05:04</string>
+		<key>start</key>
+		<string>05:00</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Think about your brow. Is it smooth and flat or is it wrinkled up with stress?</string>
+		<key>end</key>
+		<string>05:09</string>
+		<key>start</key>
+		<string>05:04</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Again, don't try to change it, just notice it.</string>
+		<key>end</key>
+		<string>05:20</string>
+		<key>start</key>
+		<string>05:09</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now bring awareness to your nose. Can you breathe freely?</string>
+		<key>end</key>
+		<string>05:24</string>
+		<key>start</key>
+		<string>05:20</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Take a few breaths in and out through your nose.</string>
+		<key>end</key>
+		<string>05:32</string>
+		<key>start</key>
+		<string>05:24</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>How does that feel?</string>
+		<key>end</key>
+		<string>05:35</string>
+		<key>start</key>
+		<string>05:32</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Can you feel air flowing into your lungs?</string>
+		<key>end</key>
+		<string>05:42</string>
+		<key>start</key>
+		<string>05:35</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Is the air warm or cool?</string>
+		<key>end</key>
+		<string>05:52</string>
+		<key>start</key>
+		<string>05:42</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Pay attention to these feelings for a moment.</string>
+		<key>end</key>
+		<string>06:03</string>
+		<key>start</key>
+		<string>05:52</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Then think about your mouth.</string>
+		<key>end</key>
+		<string>06:05</string>
+		<key>start</key>
+		<string>06:03</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>How is it positioned?</string>
+		<key>end</key>
+		<string>06:07</string>
+		<key>start</key>
+		<string>06:05</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Is it pursed? Open? Closed?</string>
+		<key>end</key>
+		<string>06:16</string>
+		<key>start</key>
+		<string>06:07</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>What about the inside of your mouth? Is it wet or dry?</string>
+		<key>end</key>
+		<string>06:27</string>
+		<key>start</key>
+		<string>06:16</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Explore all of the sensations throughout your face.</string>
+		<key>end</key>
+		<string>06:33</string>
+		<key>start</key>
+		<string>06:27</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Perhaps your skin feels dry, or you notice other sensations of itching, tingling, heaviness, heat or coolness.</string>
+		<key>end</key>
+		<string>06:40</string>
+		<key>start</key>
+		<string>06:33</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Perhaps there is no feeling at all. Just notice.</string>
+		<key>end</key>
+		<string>06:53</string>
+		<key>start</key>
+		<string>06:40</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now bring your attention to your chest and belly.</string>
+		<key>end</key>
+		<string>06:57</string>
+		<key>start</key>
+		<string>06:53</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Place one hand on your chest and one hand on your belly.</string>
+		<key>end</key>
+		<string>07:02</string>
+		<key>start</key>
+		<string>06:57</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Can you feel your body breathing? What is that like?</string>
+		<key>end</key>
+		<string>07:10</string>
+		<key>start</key>
+		<string>07:02</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Are you breathing fast or slow?</string>
+		<key>end</key>
+		<string>07:16</string>
+		<key>start</key>
+		<string>07:10</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Is your breath going more into your belly or your chest?</string>
+		<key>end</key>
+		<string>07:25</string>
+		<key>start</key>
+		<string>07:16</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now breathe in through your nose and out through your mouth.</string>
+		<key>end</key>
+		<string>07:29</string>
+		<key>start</key>
+		<string>07:25</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>How does that feel?</string>
+		<key>end</key>
+		<string>07:37</string>
+		<key>start</key>
+		<string>07:29</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now invert that pattern, breathing in through your mouth and out through your nose, and notice how that feels.</string>
+		<key>end</key>
+		<string>07:55</string>
+		<key>start</key>
+		<string>07:37</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now breathe naturally, just noticing the sensations.</string>
+		<key>end</key>
+		<string>08:12</string>
+		<key>start</key>
+		<string>07:55</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Next place your hands wherever they were before and expand your attention to include your whole body.</string>
+		<key>end</key>
+		<string>08:22</string>
+		<key>start</key>
+		<string>08:12</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Where are you sitting or lying?</string>
+		<key>end</key>
+		<string>08:26</string>
+		<key>start</key>
+		<string>08:22</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Can you feel the back side of your body touching the chair or bed in various places?</string>
+		<key>end</key>
+		<string>08:34</string>
+		<key>start</key>
+		<string>08:26</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Be mindful of the way your body is positioned.</string>
+		<key>end</key>
+		<string>08:38</string>
+		<key>start</key>
+		<string>08:34</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>There is no need to move, just observe.</string>
+		<key>end</key>
+		<string>08:48</string>
+		<key>start</key>
+		<string>08:38</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Now, with your eyes still closed, imagine the room you're in.</string>
+		<key>end</key>
+		<string>08:52</string>
+		<key>start</key>
+		<string>08:48</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Where are you positioned in the room?</string>
+		<key>end</key>
+		<string>08:56</string>
+		<key>start</key>
+		<string>08:52</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Do you have a sense of where the door is?</string>
+		<key>end</key>
+		<string>08:59</string>
+		<key>start</key>
+		<string>08:56</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>What about the ceiling?</string>
+		<key>end</key>
+		<string>09:02</string>
+		<key>start</key>
+		<string>08:59</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Can you feel your body in the larger space?</string>
+		<key>end</key>
+		<string>09:13</string>
+		<key>start</key>
+		<string>09:02</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>When you are ready, open your eyes and look around the room.</string>
+		<key>end</key>
+		<string>09:18</string>
+		<key>start</key>
+		<string>09:13</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>You can move if you wish.</string>
+		<key>end</key>
+		<string>09:21</string>
+		<key>start</key>
+		<string>09:18</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Notice where the various pieces of furniture and decoration are.</string>
+		<key>end</key>
+		<string>09:25</string>
+		<key>start</key>
+		<string>09:21</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>What do they look like?</string>
+		<key>end</key>
+		<string>09:28</string>
+		<key>start</key>
+		<string>09:25</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>You can spend as much time as you like investigating different aspects of the room.</string>
+		<key>end</key>
+		<string>09:32</string>
+		<key>start</key>
+		<string>09:28</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Remember not to judge, just to notice.</string>
+		<key>end</key>
+		<string>09:38</string>
+		<key>start</key>
+		<string>09:32</string>
+	</dict>
+	<dict>
+		<key>caption</key>
+		<string>Whenever you are ready, you can stop this exercise and continue with your day.</string>
+		<key>end</key>
+		<string>09:46</string>
+		<key>start</key>
+		<string>09:38</string>
+	</dict>
+</array>
+</plist>

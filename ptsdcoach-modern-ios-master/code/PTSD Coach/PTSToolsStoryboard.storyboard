@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tool Ambient Sounds View Controller-->
+        <scene sceneID="0pT-U3-5lh">
+            <objects>
+                <viewController storyboardIdentifier="AmbientSoundsSceneIdentifier" id="gSa-sN-Zsv" customClass="PTSToolAmbientSoundsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rb3-S7-v9M"/>
+                        <viewControllerLayoutGuide type="bottom" id="nEg-vM-hfa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="coh-Z2-HPb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0PF-fi-eZe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gSa-sN-Zsv" id="0Tn-9e-ExW"/>
+                                    <outlet property="delegate" destination="gSa-sN-Zsv" id="Od5-Kh-0oz"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lSw-A3-hdO" customClass="PTSAudioControlsView">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <color key="backgroundColor" white="0.97999999999999998" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" placeholder="YES" id="O2D-o0-9UR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wantsSeparator" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="separatorColor">
+                                        <color key="value" white="0.90000000000000002" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0PF-fi-eZe" firstAttribute="leading" secondItem="coh-Z2-HPb" secondAttribute="leading" id="1Ch-ca-tTF"/>
+                            <constraint firstItem="lSw-A3-hdO" firstAttribute="leading" secondItem="coh-Z2-HPb" secondAttribute="leading" id="3Bh-Uw-6dE"/>
+                            <constraint firstItem="nEg-vM-hfa" firstAttribute="top" secondItem="lSw-A3-hdO" secondAttribute="bottom" id="Ti0-cH-X2k"/>
+                            <constraint firstAttribute="trailing" secondItem="lSw-A3-hdO" secondAttribute="trailing" id="URG-Ln-lXz"/>
+                            <constraint firstItem="lSw-A3-hdO" firstAttribute="top" secondItem="0PF-fi-eZe" secondAttribute="bottom" id="ekA-8e-WW0"/>
+                            <constraint firstItem="0PF-fi-eZe" firstAttribute="top" secondItem="coh-Z2-HPb" secondAttribute="top" id="oI7-ly-xjU"/>
+                            <constraint firstAttribute="trailing" secondItem="0PF-fi-eZe" secondAttribute="trailing" id="sd1-bl-Lkd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="audioControlsView" destination="lSw-A3-hdO" id="PtB-v0-gxO"/>
+                        <outlet property="tableView" destination="0PF-fi-eZe" id="IIk-u2-fgR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3SN-qd-bBs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392" y="1182"/>
+        </scene>
+        <!--Tool Deep Breathing Intro View Controller-->
+        <scene sceneID="tSv-7h-F5D">
+            <objects>
+                <viewController storyboardIdentifier="DeepBreathingIntroSceneIdentifier" id="Oqf-lq-z3A" customClass="PTSToolDeepBreathingIntroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GaU-5M-EbY"/>
+                        <viewControllerLayoutGuide type="bottom" id="glE-2M-DX0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="029-ug-Ac6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QLu-Ji-s9n">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5CC-0y-lMr" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="128"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8iB-9w-Jol">
+                                                <rect key="frame" x="20" y="8" width="560" height="112"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97X-AG-FlS" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="62"/>
+                                                        <string key="text">Slowing down and deepening your breathing can help you calm down when you feel distress. Put on your headphones or go somewhere private and quiet to be led through the exercise.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UWd-wq-Owg">
+                                                        <rect key="frame" x="0.0" y="82" width="560" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LYQ-TU-6zU">
+                                                                <rect key="frame" x="261" y="0.0" width="39" height="30"/>
+                                                                <state key="normal" title="Begin"/>
+                                                                <connections>
+                                                                    <segue destination="5jS-eh-MTy" kind="show" identifier="SegueIdentifierShowDeepBreathing" id="avW-CY-HAE"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="8iB-9w-Jol" firstAttribute="top" secondItem="5CC-0y-lMr" secondAttribute="topMargin" id="C0X-bm-wrs"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="8iB-9w-Jol" secondAttribute="trailing" id="K54-l5-3vP"/>
+                                            <constraint firstItem="8iB-9w-Jol" firstAttribute="leading" secondItem="5CC-0y-lMr" secondAttribute="leadingMargin" id="hbR-je-hEb"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="8iB-9w-Jol" secondAttribute="bottom" id="rgf-zZ-hMr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="5CC-0y-lMr" secondAttribute="trailing" id="6GW-nS-gjz"/>
+                                    <constraint firstItem="5CC-0y-lMr" firstAttribute="leading" secondItem="QLu-Ji-s9n" secondAttribute="leading" id="8YS-uN-LWN"/>
+                                    <constraint firstItem="5CC-0y-lMr" firstAttribute="top" secondItem="QLu-Ji-s9n" secondAttribute="top" id="KKX-Jv-8jb"/>
+                                    <constraint firstAttribute="bottom" secondItem="5CC-0y-lMr" secondAttribute="bottom" id="V3a-uO-sQd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5CC-0y-lMr" firstAttribute="width" secondItem="029-ug-Ac6" secondAttribute="width" id="652-hl-fyt"/>
+                            <constraint firstItem="QLu-Ji-s9n" firstAttribute="leading" secondItem="029-ug-Ac6" secondAttribute="leading" id="GcP-ul-Sfi"/>
+                            <constraint firstItem="glE-2M-DX0" firstAttribute="top" secondItem="QLu-Ji-s9n" secondAttribute="bottom" id="VDI-Cc-KIs"/>
+                            <constraint firstAttribute="trailing" secondItem="QLu-Ji-s9n" secondAttribute="trailing" id="aL5-QE-bcW"/>
+                            <constraint firstItem="QLu-Ji-s9n" firstAttribute="top" secondItem="029-ug-Ac6" secondAttribute="top" id="diU-Dc-PJP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uv1-ca-YzL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="1182"/>
+        </scene>
+        <!--Tool Muscle Relaxation Intro View Controler-->
+        <scene sceneID="TH9-ZL-w94">
+            <objects>
+                <viewController storyboardIdentifier="MuscleRelaxationIntroSceneIdentifier" id="MHz-s5-leA" customClass="PTSToolMuscleRelaxationIntroViewControler" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vCi-HT-iUG"/>
+                        <viewControllerLayoutGuide type="bottom" id="wq6-3f-Lnc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Cg-Gx-5My">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aIh-nD-v75">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="frs-cY-w81" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="210"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8hm-Ov-edc">
+                                                <rect key="frame" x="20" y="8" width="560" height="194"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPc-4G-hca" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="83"/>
+                                                        <string key="text">You are about to be led through a progressive muscle relaxation exercise. You will progress through each of your major muscle groups, tensing and relaxing as you go. This exercise takes about 9 minutes. It has accompanying audio, so you will need to find a quiet place or put on your headphones now.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sit down in a comfortable chair or lay down.  Do not do this exercise while driving." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2D-kK-R9q" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="103" width="560" height="41"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Qih-Sb-chY">
+                                                        <rect key="frame" x="0.0" y="164" width="560" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugZ-Ac-mBe">
+                                                                <rect key="frame" x="261" y="0.0" width="39" height="30"/>
+                                                                <state key="normal" title="Begin"/>
+                                                                <connections>
+                                                                    <segue destination="Vdt-yY-ygb" kind="show" identifier="SegueIdentifierShowMuscleRelaxation" id="5y0-OM-XU4"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="8hm-Ov-edc" firstAttribute="leading" secondItem="frs-cY-w81" secondAttribute="leadingMargin" id="8tm-Ri-Ha3"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="8hm-Ov-edc" secondAttribute="trailing" id="JKY-dc-pat"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="8hm-Ov-edc" secondAttribute="bottom" id="dsy-wB-Sha"/>
+                                            <constraint firstItem="8hm-Ov-edc" firstAttribute="top" secondItem="frs-cY-w81" secondAttribute="topMargin" id="hmb-Qh-5Nd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="frs-cY-w81" secondAttribute="trailing" id="7Bk-oh-flb"/>
+                                    <constraint firstItem="frs-cY-w81" firstAttribute="top" secondItem="aIh-nD-v75" secondAttribute="top" id="7Z9-No-Md2"/>
+                                    <constraint firstItem="frs-cY-w81" firstAttribute="leading" secondItem="aIh-nD-v75" secondAttribute="leading" id="Bdd-Jb-1yf"/>
+                                    <constraint firstAttribute="bottom" secondItem="frs-cY-w81" secondAttribute="bottom" id="UaM-1S-FDW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aIh-nD-v75" firstAttribute="leading" secondItem="0Cg-Gx-5My" secondAttribute="leading" id="IVe-uP-PWy"/>
+                            <constraint firstItem="wq6-3f-Lnc" firstAttribute="top" secondItem="aIh-nD-v75" secondAttribute="bottom" id="RZc-lJ-iZF"/>
+                            <constraint firstItem="aIh-nD-v75" firstAttribute="top" secondItem="0Cg-Gx-5My" secondAttribute="top" id="cfu-Cr-HLv"/>
+                            <constraint firstAttribute="trailing" secondItem="aIh-nD-v75" secondAttribute="trailing" id="gRQ-Jw-Ipl"/>
+                            <constraint firstItem="frs-cY-w81" firstAttribute="width" secondItem="0Cg-Gx-5My" secondAttribute="width" id="ocL-P3-gwZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yWx-vz-tUu">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="4pp-qf-H09"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hmc-DV-jMC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="1901"/>
+        </scene>
+        <!--Tool Mindful Looking Intro View Controller-->
+        <scene sceneID="8k3-Xd-InH">
+            <objects>
+                <viewController storyboardIdentifier="MindfulLookingIntroSceneIdentifier" id="S7m-WH-qtc" customClass="PTSToolMindfulLookingIntroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CXY-cB-TUZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="itP-Rs-kKK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vLC-Vs-ZSy">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZMi-8Q-tx3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zIj-j7-7ZA" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="229"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6rU-MG-xab">
+                                                <rect key="frame" x="20" y="8" width="560" height="213"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50u-B6-Xkk" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="62"/>
+                                                        <string key="text">For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed. You will be putting all of your attention onto a picture from your library.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clM-n0-KNW" customClass="PTSDynamicTypeBodyLabel">
+                                                        <rect key="frame" x="0.0" y="82" width="560" height="41"/>
+                                                        <string key="text">Select pictures from your photo albums that will allow you to focus your entire attention on the colors, the textures, and the features of the image.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sE1-wV-zDs">
+                                                        <rect key="frame" x="0.0" y="143" width="560" height="70"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="erz-My-RXH">
+                                                                <rect key="frame" x="228" y="0.0" width="104" height="30"/>
+                                                                <state key="normal" title="Select Pictures"/>
+                                                                <connections>
+                                                                    <segue destination="bdM-VH-Qoi" kind="show" identifier="ShowPhotosSegueIdentifier" id="zfQ-Hq-ati"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xai-Ig-HWl">
+                                                                <rect key="frame" x="261" y="40" width="39" height="30"/>
+                                                                <state key="normal" title="Begin"/>
+                                                                <connections>
+                                                                    <segue destination="b83-df-sFY" kind="show" id="Z4Y-3m-seh"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="6rU-MG-xab" firstAttribute="top" secondItem="zIj-j7-7ZA" secondAttribute="topMargin" id="1e0-PG-hQa"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="6rU-MG-xab" secondAttribute="bottom" id="Id7-aR-kM0"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="6rU-MG-xab" secondAttribute="trailing" id="aKp-EY-O2t"/>
+                                            <constraint firstItem="6rU-MG-xab" firstAttribute="leading" secondItem="zIj-j7-7ZA" secondAttribute="leadingMargin" id="xEQ-ri-FvM"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zIj-j7-7ZA" firstAttribute="top" secondItem="ZMi-8Q-tx3" secondAttribute="top" id="Mv2-2K-koa"/>
+                                    <constraint firstItem="zIj-j7-7ZA" firstAttribute="leading" secondItem="ZMi-8Q-tx3" secondAttribute="leading" id="X9d-e2-37G"/>
+                                    <constraint firstAttribute="trailing" secondItem="zIj-j7-7ZA" secondAttribute="trailing" id="sAL-zA-vKz"/>
+                                    <constraint firstAttribute="bottom" secondItem="zIj-j7-7ZA" secondAttribute="bottom" id="tf5-hU-8SB"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="itP-Rs-kKK" firstAttribute="top" secondItem="ZMi-8Q-tx3" secondAttribute="bottom" id="Cda-fX-SoN"/>
+                            <constraint firstAttribute="trailing" secondItem="ZMi-8Q-tx3" secondAttribute="trailing" id="PML-eB-usG"/>
+                            <constraint firstItem="ZMi-8Q-tx3" firstAttribute="leading" secondItem="vLC-Vs-ZSy" secondAttribute="leading" id="QEX-8W-vQq"/>
+                            <constraint firstItem="ZMi-8Q-tx3" firstAttribute="top" secondItem="vLC-Vs-ZSy" secondAttribute="top" id="RIH-7H-9pF"/>
+                            <constraint firstItem="zIj-j7-7ZA" firstAttribute="width" secondItem="vLC-Vs-ZSy" secondAttribute="width" id="YyK-LW-2if"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beginButton" destination="xai-Ig-HWl" id="vBw-Oa-XsQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxo-Na-834" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="2594"/>
+        </scene>
+        <!--Tool Textual Content View Controller-->
+        <scene sceneID="kX5-zL-yEW">
+            <objects>
+                <viewController storyboardIdentifier="TextualContentSceneIdentifier" id="Zqp-Qc-qZz" customClass="PTSToolTextualContentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O5I-D8-RcZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="0qt-Sb-P07"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="u9x-bI-qRC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="G9O-cC-zyd">
+                                <rect key="frame" x="20" y="180" width="560" height="240"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="mQI-OJ-aOE">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="240"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjc-Tx-9kN" userLabel="Header Label" customClass="PTSDynamicTypeHeadlineLabel">
+                                                <rect key="frame" x="230" y="0.0" width="101" height="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RXP-W1-p0M" userLabel="Title Label" customClass="PTSDynamicTypeHeadlineLabel">
+                                                <rect key="frame" x="241" y="40" width="79" height="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dm-rG-GhC" userLabel="Content Label" customClass="PTSDynamicTypeBodyLabel">
+                                                <rect key="frame" x="0.0" y="80" width="560" height="125"/>
+                                                <string key="text">Sed posuere consectetur est at lobortis. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec ullamcorper nulla non metus auctor fringilla.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="– Author" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDS-TX-J7Y" userLabel="Footer Label" customClass="PTSDynamicTypeFootnoteLabel">
+                                                <rect key="frame" x="256" y="225" width="48" height="15"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="G9O-cC-zyd" secondAttribute="trailing" id="85V-lE-ibP"/>
+                            <constraint firstItem="G9O-cC-zyd" firstAttribute="leading" secondItem="u9x-bI-qRC" secondAttribute="leadingMargin" id="ayi-eY-WbF"/>
+                            <constraint firstItem="G9O-cC-zyd" firstAttribute="centerY" secondItem="u9x-bI-qRC" secondAttribute="centerY" id="gaw-zs-NZ0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentLabel" destination="7dm-rG-GhC" id="FvN-kX-4Sa"/>
+                        <outlet property="footerLabel" destination="oDS-TX-J7Y" id="PLb-oO-Knp"/>
+                        <outlet property="headerLabel" destination="jjc-Tx-9kN" id="bJj-VG-OWZ"/>
+                        <outlet property="titleLabel" destination="RXP-W1-p0M" id="Y2W-ES-McA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IyE-IQ-9P1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1044" y="459"/>
+        </scene>
+        <!--Tool Deep Breathing View Controller-->
+        <scene sceneID="hms-Xb-rFn">
+            <objects>
+                <viewController storyboardIdentifier="DeepBreathingSceneIdentifier" id="5jS-eh-MTy" customClass="PTSToolDeepBreathingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QVN-q4-efp"/>
+                        <viewControllerLayoutGuide type="bottom" id="9eT-67-93i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="JzO-mQ-jgW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kzM-vz-HlI" userLabel="Margin Container View">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Vgo-lY-2QJ">
+                                        <rect key="frame" x="8" y="8" width="544" height="564"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ce-jg-v42" userLabel="Image View Container">
+                                                <rect key="frame" x="0.0" y="0.0" width="544" height="462"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="Captions Go Here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ips-SI-1IQ" customClass="PTSDynamicTypeCalloutLabel">
+                                                <rect key="frame" x="0.0" y="482" width="544" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yt-qy-nfI" customClass="PTSAudioControlsView">
+                                                <rect key="frame" x="0.0" y="520" width="544" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" placeholder="YES" id="SOw-uT-NwB"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wantsSeparator" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Vgo-lY-2QJ" secondAttribute="trailing" id="Q87-td-XHt"/>
+                                    <constraint firstItem="Vgo-lY-2QJ" firstAttribute="top" secondItem="kzM-vz-HlI" secondAttribute="topMargin" id="aRB-Vj-aGV"/>
+                                    <constraint firstItem="Vgo-lY-2QJ" firstAttribute="leading" secondItem="kzM-vz-HlI" secondAttribute="leadingMargin" id="vVI-C8-PXG"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="Vgo-lY-2QJ" secondAttribute="bottom" id="ypJ-S9-u2P"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="kzM-vz-HlI" secondAttribute="trailing" id="JYZ-Hv-EEs"/>
+                            <constraint firstItem="9eT-67-93i" firstAttribute="top" secondItem="kzM-vz-HlI" secondAttribute="bottom" id="RIz-bk-28A"/>
+                            <constraint firstItem="kzM-vz-HlI" firstAttribute="leading" secondItem="JzO-mQ-jgW" secondAttribute="leadingMargin" id="UfF-JX-5oG"/>
+                            <constraint firstItem="kzM-vz-HlI" firstAttribute="top" secondItem="QVN-q4-efp" secondAttribute="bottom" id="hmw-r2-7G7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="YdE-Xe-rln">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rmx-WG-pki"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="audioControlsView" destination="8yt-qy-nfI" id="wSR-xi-LS1"/>
+                        <outlet property="captionsLabel" destination="ips-SI-1IQ" id="Wxw-le-XAD"/>
+                        <outlet property="imageViewsContainerView" destination="2Ce-jg-v42" id="qb5-6R-ebp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pU-PW-qhr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="1182"/>
+        </scene>
+        <!--Tool Soothing Picture View Controller-->
+        <scene sceneID="sxi-3X-MFG">
+            <objects>
+                <viewController storyboardIdentifier="SoothingPicturesSceneIdentifier" id="rJb-VC-DSy" customClass="PTSToolSoothingPictureViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PBL-x9-ceF"/>
+                        <viewControllerLayoutGuide type="bottom" id="5tq-hs-ore"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UAW-zz-cHk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGS-EH-gXh" userLabel="Margin Container View">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="l8o-S1-3as">
+                                        <rect key="frame" x="20" y="8" width="560" height="564"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="260" text="Look at a picture that is meaningful or soothing to you." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU8-dC-C0j" customClass="PTSDynamicTypeBodyLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="20"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oM3-WE-JtD" customClass="PTSDynamicTypeCalloutLabel">
+                                                <rect key="frame" x="0.0" y="40" width="560" height="36"/>
+                                                <string key="text">There are no images to display.
+Tap the Select Pictures button to configure.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BV5-Db-9VN">
+                                                <rect key="frame" x="0.0" y="96" width="560" height="418"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="261" verticalHuggingPriority="261" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2k-JQ-XTZ">
+                                                <rect key="frame" x="0.0" y="534" width="560" height="30"/>
+                                                <state key="normal" title="Select Pictures"/>
+                                                <connections>
+                                                    <segue destination="NtZ-lR-fWk" kind="show" identifier="ShowPhotosSegueIdentifier" id="mua-67-641"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="l8o-S1-3as" firstAttribute="leading" secondItem="FGS-EH-gXh" secondAttribute="leadingMargin" id="5lH-y9-sFm"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="l8o-S1-3as" secondAttribute="bottom" id="aZC-QQ-iNP"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="l8o-S1-3as" secondAttribute="trailing" id="htZ-93-y78"/>
+                                    <constraint firstItem="l8o-S1-3as" firstAttribute="top" secondItem="FGS-EH-gXh" secondAttribute="topMargin" id="luK-zo-Czj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="FGS-EH-gXh" firstAttribute="leading" secondItem="UAW-zz-cHk" secondAttribute="leading" id="6yK-x1-7kw"/>
+                            <constraint firstItem="FGS-EH-gXh" firstAttribute="top" secondItem="PBL-x9-ceF" secondAttribute="bottom" id="Jo6-9c-PDB"/>
+                            <constraint firstItem="5tq-hs-ore" firstAttribute="top" secondItem="FGS-EH-gXh" secondAttribute="bottom" id="PpS-ma-5o8"/>
+                            <constraint firstAttribute="trailing" secondItem="FGS-EH-gXh" secondAttribute="trailing" id="bPq-nS-Ppk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kwL-ec-DBd">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="oMI-M7-c17"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="BV5-Db-9VN" id="shP-kF-yz7"/>
+                        <outlet property="noImagesLabel" destination="oM3-WE-JtD" id="ZPF-Xn-8JE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6b4-d9-ber" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392" y="1901"/>
+        </scene>
+        <!--Tool Mindful Looking View Controller-->
+        <scene sceneID="in8-Gb-DMb">
+            <objects>
+                <viewController storyboardIdentifier="MindfulLookingSceneIdentifier" id="b83-df-sFY" customClass="PTSToolMindfulLookingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ukg-PC-V0e"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Bq-Hw-a8b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SFc-Qe-rob">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SXA-Mj-Aqj" userLabel="Margin Container View">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="6Q8-Fn-M3z" userLabel="Activity Stack View">
+                                        <rect key="frame" x="20" y="8" width="560" height="564"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="260" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvt-xC-AXW" customClass="PTSDynamicTypeBodyLabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="560" height="62"/>
+                                                <string key="text">Focus your entire attention on the colors, the textures, and the features of the image. Try not to get wrapped up in the meaning of the person, place, or thing in the image.</string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="740" verticalCompressionResistancePriority="740" translatesAutoresizingMaskIntoConstraints="NO" id="0rb-nf-6Fu">
+                                                <rect key="frame" x="0.0" y="82" width="560" height="396"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qFp-9l-9KE">
+                                                <rect key="frame" x="0.0" y="498" width="560" height="66"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="775" verticalCompressionResistancePriority="775" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eI4-eR-ujD" customClass="PTSTimerLabel">
+                                                        <rect key="frame" x="251" y="0.0" width="59" height="26"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiO-a2-pf4">
+                                                        <rect key="frame" x="265" y="36" width="30" height="30"/>
+                                                        <state key="normal" title="Play"/>
+                                                        <connections>
+                                                            <action selector="handlePlayButtonPressed:" destination="b83-df-sFY" eventType="touchUpInside" id="Ne5-Fp-fyY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="6Q8-Fn-M3z" firstAttribute="leading" secondItem="SXA-Mj-Aqj" secondAttribute="leadingMargin" id="5nh-YW-tdL"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="6Q8-Fn-M3z" secondAttribute="bottom" id="TlV-cb-aiW"/>
+                                    <constraint firstItem="6Q8-Fn-M3z" firstAttribute="top" secondItem="SXA-Mj-Aqj" secondAttribute="topMargin" id="UjE-ne-DKY"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="6Q8-Fn-M3z" secondAttribute="trailing" id="asG-L7-2FF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Bq-Hw-a8b" firstAttribute="top" secondItem="SXA-Mj-Aqj" secondAttribute="bottom" id="HQE-bm-OD8"/>
+                            <constraint firstItem="SXA-Mj-Aqj" firstAttribute="leading" secondItem="SFc-Qe-rob" secondAttribute="leading" id="MTC-t0-Gq2"/>
+                            <constraint firstItem="SXA-Mj-Aqj" firstAttribute="top" secondItem="Ukg-PC-V0e" secondAttribute="bottom" id="cps-MZ-rAe"/>
+                            <constraint firstAttribute="trailing" secondItem="SXA-Mj-Aqj" secondAttribute="trailing" id="eLn-0f-X1P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="0rb-nf-6Fu" id="cT9-R9-sZL"/>
+                        <outlet property="playButton" destination="EiO-a2-pf4" id="iNC-b6-MS5"/>
+                        <outlet property="timerLabel" destination="eI4-eR-ujD" id="a52-Z6-zjz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4FK-mu-4iR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="2594"/>
+        </scene>
+        <!--Tool Audio Exercise Intro View Controller-->
+        <scene sceneID="c5W-lo-6j4">
+            <objects>
+                <viewController storyboardIdentifier="AudioExerciseIntroSceneIdentifier" id="Gxr-cK-kIz" customClass="PTSToolAudioExerciseIntroViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N1O-B0-1MJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="3Ao-Sc-WSM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6Lp-yb-btU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DeE-n8-YTO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WHI-2R-dqF" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="234"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0YU-ev-12P">
+                                                <rect key="frame" x="20" y="8" width="560" height="218"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" horizontalHuggingPriority="260" verticalHuggingPriority="260" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" translatesAutoresizingMaskIntoConstraints="NO" id="V3C-0a-DWW" customClass="PTSSegmentedTextView">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="128"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="128" placeholder="YES" id="HSZ-fp-w40"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useScrollView" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0jC-5w-qqW">
+                                                        <rect key="frame" x="0.0" y="148" width="560" height="70"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPv-jx-Q6f">
+                                                                <rect key="frame" x="240" y="0.0" width="80" height="30"/>
+                                                                <state key="normal" title="Self Guided"/>
+                                                                <connections>
+                                                                    <segue destination="g1A-KA-dlh" kind="show" identifier="SegueIdentifierShowSelfGuided" id="xcn-wz-iHd"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfV-SD-I7n">
+                                                                <rect key="frame" x="261" y="40" width="39" height="30"/>
+                                                                <state key="normal" title="Begin"/>
+                                                                <connections>
+                                                                    <segue destination="yqW-0V-Kuu" kind="show" identifier="SegueIdentifierShowAudioExercise" id="5hf-Lh-l0B"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="0YU-ev-12P" secondAttribute="trailing" id="ZOX-IE-Mo0"/>
+                                            <constraint firstItem="0YU-ev-12P" firstAttribute="top" secondItem="WHI-2R-dqF" secondAttribute="topMargin" id="aWY-D8-Sdn"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="0YU-ev-12P" secondAttribute="bottom" id="dLc-Ft-7mY"/>
+                                            <constraint firstItem="0YU-ev-12P" firstAttribute="leading" secondItem="WHI-2R-dqF" secondAttribute="leadingMargin" id="hcx-TC-Bt7"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="WHI-2R-dqF" secondAttribute="trailing" id="ZzN-1L-4kT"/>
+                                    <constraint firstAttribute="bottom" secondItem="WHI-2R-dqF" secondAttribute="bottom" id="cPo-YU-gge"/>
+                                    <constraint firstItem="WHI-2R-dqF" firstAttribute="top" secondItem="DeE-n8-YTO" secondAttribute="top" id="hnT-NO-MwZ"/>
+                                    <constraint firstItem="WHI-2R-dqF" firstAttribute="leading" secondItem="DeE-n8-YTO" secondAttribute="leading" id="qvI-cJ-1O3"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WHI-2R-dqF" firstAttribute="width" secondItem="6Lp-yb-btU" secondAttribute="width" id="0rG-Pp-lgf"/>
+                            <constraint firstItem="DeE-n8-YTO" firstAttribute="leading" secondItem="6Lp-yb-btU" secondAttribute="leading" id="PoO-Ii-noP"/>
+                            <constraint firstItem="DeE-n8-YTO" firstAttribute="top" secondItem="6Lp-yb-btU" secondAttribute="top" id="ZMN-1C-lYH"/>
+                            <constraint firstItem="3Ao-Sc-WSM" firstAttribute="top" secondItem="DeE-n8-YTO" secondAttribute="bottom" id="bJD-8M-Oct"/>
+                            <constraint firstAttribute="trailing" secondItem="DeE-n8-YTO" secondAttribute="trailing" id="pfF-54-izS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentedTextView" destination="V3C-0a-DWW" id="IQS-yE-5lM"/>
+                        <outlet property="selfGuidedButton" destination="YPv-jx-Q6f" id="19i-D4-6L7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fcx-oi-V5b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005" y="-628"/>
+        </scene>
+        <!--Tool Self Guided Exercise View Controller-->
+        <scene sceneID="d11-n1-Sh7">
+            <objects>
+                <viewController id="g1A-KA-dlh" customClass="PTSToolSelfGuidedExerciseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dQm-dz-kEL"/>
+                        <viewControllerLayoutGuide type="bottom" id="k45-Ax-HKE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="X1e-D9-Oh4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zXk-T1-qrI" customClass="PTSSegmentedTextView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottomMargin" secondItem="zXk-T1-qrI" secondAttribute="bottom" id="VVr-lk-IUU"/>
+                            <constraint firstAttribute="trailing" secondItem="zXk-T1-qrI" secondAttribute="trailing" id="WXD-AW-bfk"/>
+                            <constraint firstItem="zXk-T1-qrI" firstAttribute="top" secondItem="X1e-D9-Oh4" secondAttribute="top" id="dq5-zF-crI"/>
+                            <constraint firstItem="zXk-T1-qrI" firstAttribute="leading" secondItem="X1e-D9-Oh4" secondAttribute="leading" id="yQm-Op-IIJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="segmentedTextView" destination="zXk-T1-qrI" id="1J0-KN-ni3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qQp-YX-Ysi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="-253"/>
+        </scene>
+        <!--Tool Soothing Audio View Controller-->
+        <scene sceneID="CND-qz-sAO">
+            <objects>
+                <viewController storyboardIdentifier="SoothingAudioSceneIdentifier" id="3VK-Xu-D2c" customClass="PTSToolSoothingAudioViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="78J-z0-H7T"/>
+                        <viewControllerLayoutGuide type="bottom" id="UdJ-zI-vC6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JcY-Cu-FP9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ZF-dh-enr">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="6mo-ik-hJ0" kind="embed" identifier="EmbedSongPlayerSegue" id="hgQ-Bj-3Mx"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2ZF-dh-enr" secondAttribute="trailing" id="5Tw-sT-rTd"/>
+                            <constraint firstItem="2ZF-dh-enr" firstAttribute="leading" secondItem="JcY-Cu-FP9" secondAttribute="leading" id="NTm-yB-C2T"/>
+                            <constraint firstItem="2ZF-dh-enr" firstAttribute="top" secondItem="JcY-Cu-FP9" secondAttribute="top" id="W8k-Su-HT7"/>
+                            <constraint firstItem="UdJ-zI-vC6" firstAttribute="top" secondItem="2ZF-dh-enr" secondAttribute="bottom" id="WUU-f4-nlv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="H5t-0L-p7U">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="6hB-sd-xhY"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eE3-NX-2JW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392" y="459"/>
+        </scene>
+        <!--PTSSongPlayerStoryboard-->
+        <scene sceneID="FM1-lb-6Ym">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSSongPlayerStoryboard" id="6mo-ik-hJ0" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wDL-hi-oTV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2944.5" y="459"/>
+        </scene>
+        <!--Tool Mindful Listening View Controller-->
+        <scene sceneID="fNd-v1-uko">
+            <objects>
+                <viewController storyboardIdentifier="MindfulListeningSceneIdentifier" id="wMM-1Z-v3W" customClass="PTSToolMindfulListeningViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RpA-Kf-tY5"/>
+                        <viewControllerLayoutGuide type="bottom" id="8H1-q7-mpq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="phU-mc-Glz">
+                        <rect key="frame" x="0.0" y="0.0" width="1200" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IAT-F4-CAQ">
+                                <rect key="frame" x="20" y="40" width="1160" height="540"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ZGT-rF-8md">
+                                        <rect key="frame" x="0.0" y="0.0" width="387" height="540"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="260" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7rv-eg-l24">
+                                                <rect key="frame" x="0.0" y="0.0" width="387" height="125"/>
+                                                <string key="text">For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.  You may either pay attention entirely to the world around you or you may put all of your attention onto a song from your library. In either case, attend entirely to the sounds rather than the meanings of the sounds. </string>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="259" verticalHuggingPriority="259" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZA5-2P-2Gx">
+                                                <rect key="frame" x="0.0" y="145" width="387" height="70"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NDf-n2-Nux">
+                                                        <rect key="frame" x="138" y="0.0" width="111" height="70"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84E-la-KLz">
+                                                                <rect key="frame" x="0.0" y="0.0" width="111" height="30"/>
+                                                                <state key="normal" title="My Environment"/>
+                                                                <connections>
+                                                                    <action selector="handleMyEnvironmentButtonPressed:" destination="wMM-1Z-v3W" eventType="touchUpInside" id="x5h-MU-8x5"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="va3-kN-If2">
+                                                                <rect key="frame" x="0.0" y="40" width="111" height="30"/>
+                                                                <state key="normal" title="My Songs"/>
+                                                                <connections>
+                                                                    <action selector="handleMySongsButtonPressed:" destination="wMM-1Z-v3W" eventType="touchUpInside" id="0Na-EX-4I5"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QKl-zl-fb9" userLabel="Empty Filler View">
+                                                <rect key="frame" x="0.0" y="235" width="387" height="305"/>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="il1-0g-Uc1">
+                                        <rect key="frame" x="387" y="0.0" width="386" height="540"/>
+                                        <connections>
+                                            <segue destination="DkG-jE-2rE" kind="embed" id="PfH-mJ-fef"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goD-wz-Uwc">
+                                        <rect key="frame" x="773" y="0.0" width="387" height="540"/>
+                                        <connections>
+                                            <segue destination="kxs-SY-Xr8" kind="embed" identifier="EmbedSongPlayerSegue" id="Rwr-Hf-s5U"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8H1-q7-mpq" firstAttribute="top" secondItem="IAT-F4-CAQ" secondAttribute="bottom" constant="20" id="0lE-pk-nBn"/>
+                            <constraint firstItem="IAT-F4-CAQ" firstAttribute="leading" secondItem="phU-mc-Glz" secondAttribute="leadingMargin" id="4iB-hI-VYM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IAT-F4-CAQ" secondAttribute="trailing" id="A6t-wS-HH1"/>
+                            <constraint firstItem="IAT-F4-CAQ" firstAttribute="top" secondItem="RpA-Kf-tY5" secondAttribute="bottom" constant="20" id="WrT-Ml-5DH"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1200" height="600"/>
+                    <connections>
+                        <outlet property="introStackView" destination="ZGT-rF-8md" id="RX9-e4-wc1"/>
+                        <outlet property="myEnvironmentContainerView" destination="il1-0g-Uc1" id="Or1-FP-pRS"/>
+                        <outlet property="mySongsContainerView" destination="goD-wz-Uwc" id="7or-uC-cJ9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8p-u5-Ehi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3980" y="1896"/>
+        </scene>
+        <!--PTSPhotosStoryboard-->
+        <scene sceneID="Mcv-Nm-dfm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSPhotosStoryboard" id="bdM-VH-Qoi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tki-PR-o2Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054.5" y="2996"/>
+        </scene>
+        <!--PTSPhotosStoryboard-->
+        <scene sceneID="wjI-Kg-zqK">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSPhotosStoryboard" id="NtZ-lR-fWk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yXf-dF-fFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392.5" y="2359"/>
+        </scene>
+        <!--Tool Muscle Relaxation View Controller-->
+        <scene sceneID="Mu9-fN-Pi0">
+            <objects>
+                <viewController storyboardIdentifier="MuscleRelaxationSceneIdentifier" id="Vdt-yY-ygb" customClass="PTSToolMuscleRelaxationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R81-HG-aHE"/>
+                        <viewControllerLayoutGuide type="bottom" id="rCZ-ZR-h8k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yZf-WO-vdz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yxx-vi-JLC" userLabel="Margin Container View">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TMW-Ce-aMp">
+                                        <rect key="frame" x="8" y="8" width="544" height="564"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r2x-XA-gSt" userLabel="Image View Container">
+                                                <rect key="frame" x="0.0" y="0.0" width="544" height="462"/>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="Captions Go Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XGr-rG-rNX" customClass="PTSDynamicTypeCalloutLabel">
+                                                <rect key="frame" x="0.0" y="482" width="544" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xf6-6O-mak" customClass="PTSAudioControlsView">
+                                                <rect key="frame" x="0.0" y="520" width="544" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" placeholder="YES" id="C4t-Tz-sTQ"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wantsSeparator" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="TMW-Ce-aMp" firstAttribute="top" secondItem="Yxx-vi-JLC" secondAttribute="topMargin" id="08f-Ep-I1B"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="TMW-Ce-aMp" secondAttribute="trailing" id="Wj5-bs-LHr"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="TMW-Ce-aMp" secondAttribute="bottom" id="bhI-DX-m5d"/>
+                                    <constraint firstItem="TMW-Ce-aMp" firstAttribute="leading" secondItem="Yxx-vi-JLC" secondAttribute="leadingMargin" id="mRX-ex-1pq"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yxx-vi-JLC" firstAttribute="top" secondItem="R81-HG-aHE" secondAttribute="bottom" id="7Re-DF-qE1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yxx-vi-JLC" secondAttribute="trailing" id="LxY-pM-wuz"/>
+                            <constraint firstItem="rCZ-ZR-h8k" firstAttribute="top" secondItem="Yxx-vi-JLC" secondAttribute="bottom" id="rp0-gR-4M3"/>
+                            <constraint firstItem="Yxx-vi-JLC" firstAttribute="leading" secondItem="yZf-WO-vdz" secondAttribute="leadingMargin" id="vQJ-MV-Z5G"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="audioControlsView" destination="Xf6-6O-mak" id="e8j-IX-Tsu"/>
+                        <outlet property="captionsLabel" destination="XGr-rG-rNX" id="Q45-0Y-aQn"/>
+                        <outlet property="imageViewsContainerView" destination="r2x-XA-gSt" id="As0-vx-TFk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mxb-yy-807" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728" y="1901"/>
+        </scene>
+        <!--Tool Audio Exercise View Controller-->
+        <scene sceneID="XJQ-33-z8u">
+            <objects>
+                <viewController storyboardIdentifier="AudioExerciseSceneIdentifier" id="yqW-0V-Kuu" customClass="PTSToolAudioExerciseViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5k2-w6-fZU"/>
+                        <viewControllerLayoutGuide type="bottom" id="tlJ-qj-5fW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="En6-pu-tag">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kkT-eR-t8G" userLabel="Margin Container View">
+                                <rect key="frame" x="20" y="20" width="560" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="QcB-uy-eHF">
+                                        <rect key="frame" x="8" y="8" width="544" height="564"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dr6-21-WmU">
+                                                <rect key="frame" x="0.0" y="0.0" width="544" height="462"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" placeholder="YES" id="pYw-dL-qAk"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="300" verticalHuggingPriority="300" horizontalCompressionResistancePriority="800" verticalCompressionResistancePriority="800" text="Captions Go Here." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D0S-Tb-xOZ" customClass="PTSDynamicTypeCalloutLabel">
+                                                <rect key="frame" x="0.0" y="482" width="544" height="18"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zu6-kt-cmy" customClass="PTSAudioControlsView">
+                                                <rect key="frame" x="0.0" y="520" width="544" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" placeholder="YES" id="xHg-oZ-UnK"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="wantsSeparator" value="NO"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="QcB-uy-eHF" firstAttribute="leading" secondItem="kkT-eR-t8G" secondAttribute="leadingMargin" id="1GF-ns-sck"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="QcB-uy-eHF" secondAttribute="trailing" id="7G4-0v-D35"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="QcB-uy-eHF" secondAttribute="bottom" id="GAV-rU-t4w"/>
+                                    <constraint firstItem="QcB-uy-eHF" firstAttribute="top" secondItem="kkT-eR-t8G" secondAttribute="topMargin" id="g2P-Ja-YTz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kkT-eR-t8G" firstAttribute="leading" secondItem="En6-pu-tag" secondAttribute="leadingMargin" id="5HV-aF-RKm"/>
+                            <constraint firstItem="kkT-eR-t8G" firstAttribute="top" secondItem="5k2-w6-fZU" secondAttribute="bottom" id="IHp-kM-Lc6"/>
+                            <constraint firstItem="tlJ-qj-5fW" firstAttribute="top" secondItem="kkT-eR-t8G" secondAttribute="bottom" id="d0C-D6-O2y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kkT-eR-t8G" secondAttribute="trailing" id="t6j-ZK-Z9E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="audioControlsView" destination="zu6-kt-cmy" id="Bcc-LF-8jB"/>
+                        <outlet property="captionsLabel" destination="D0S-Tb-xOZ" id="0HW-4v-tIs"/>
+                        <outlet property="imageView" destination="Dr6-21-WmU" id="gfz-4H-Mku"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W9h-PW-esd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1722" y="-976"/>
+        </scene>
+        <!--Tool Countdown Tip View Controller-->
+        <scene sceneID="POp-Ou-arZ">
+            <objects>
+                <viewController storyboardIdentifier="CountdownTipSceneIdentifier" id="1Kl-bo-V4v" customClass="PTSToolCountdownTipViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fYy-zw-cKU"/>
+                        <viewControllerLayoutGuide type="bottom" id="4OQ-sa-BwE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uTk-rf-4lG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yok-02-woZ">
+                                <rect key="frame" x="20" y="208" width="560" height="184"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Introduction Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8OH-4P-QD9">
+                                        <rect key="frame" x="219" y="0.0" width="123" height="20"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVR-Fn-5Dx">
+                                        <rect key="frame" x="249" y="40" width="62" height="30"/>
+                                        <state key="normal" title="Continue"/>
+                                        <connections>
+                                            <action selector="handleStartButtonPressed:" destination="1Kl-bo-V4v" eventType="touchUpInside" id="pOi-hX-dc4"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Q4-IE-0UT">
+                                        <rect key="frame" x="22" y="90" width="516" height="41"/>
+                                        <string key="text">Vestibulum id ligula porta felis euismod semper. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0v-cK-g5C" customClass="PTSDynamicTypeCountdownLabel">
+                                        <rect key="frame" x="224" y="151" width="113" height="33"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="yok-02-woZ" secondAttribute="trailing" id="RFP-Hf-TBJ"/>
+                            <constraint firstItem="yok-02-woZ" firstAttribute="leading" secondItem="uTk-rf-4lG" secondAttribute="leadingMargin" id="SDd-fL-hLf"/>
+                            <constraint firstItem="yok-02-woZ" firstAttribute="centerY" secondItem="uTk-rf-4lG" secondAttribute="centerY" id="Vp0-8n-kfF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countdownLabel" destination="Z0v-cK-g5C" id="xa6-MX-hYF"/>
+                        <outlet property="introductionLabel" destination="8OH-4P-QD9" id="AgU-XI-6q5"/>
+                        <outlet property="startButton" destination="qVR-Fn-5Dx" id="vIh-iG-pIW"/>
+                        <outlet property="tipLabel" destination="5Q4-IE-0UT" id="jjs-oy-J1T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LfJ-98-b9O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1728" y="459"/>
+        </scene>
+        <!--Connect-->
+        <scene sceneID="YR8-Ga-FTA">
+            <objects>
+                <viewController storyboardIdentifier="ConnectOthersSceneIdentifier" id="2A9-P7-xer" customClass="PTSToolConnectOthersViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VJ6-l6-VBf"/>
+                        <viewControllerLayoutGuide type="bottom" id="Tb3-Ln-Wwe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K2S-HY-6cL">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uUT-kE-II5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <connections>
+                                    <segue destination="Eb1-JW-9Ah" kind="embed" identifier="ContactsEmbeddedSegue" id="e5R-Ic-lka"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="uUT-kE-II5" firstAttribute="leading" secondItem="K2S-HY-6cL" secondAttribute="leading" id="KHL-lO-Qez"/>
+                            <constraint firstItem="uUT-kE-II5" firstAttribute="trailing" secondItem="K2S-HY-6cL" secondAttribute="trailing" id="iWO-7m-cGq"/>
+                            <constraint firstItem="uUT-kE-II5" firstAttribute="top" secondItem="K2S-HY-6cL" secondAttribute="top" id="kK9-Hb-A0c"/>
+                            <constraint firstItem="uUT-kE-II5" firstAttribute="bottom" secondItem="K2S-HY-6cL" secondAttribute="bottom" id="nzN-FF-Nuf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Connect" id="tP1-fs-fOt">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="0Ex-jL-Llh"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EE4-Xq-fFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392" y="-253"/>
+        </scene>
+        <!--PTSContactsStoryboard-->
+        <scene sceneID="XFp-ka-YZU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSContactsStoryboard" id="Eb1-JW-9Ah" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2r-9P-tjA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2985.5" y="-253"/>
+        </scene>
+        <!--Tool Mindful Listening Environment View Controller-->
+        <scene sceneID="4Ge-c8-181">
+            <objects>
+                <viewController id="DkG-jE-2rE" customClass="PTSToolMindfulListeningEnvironmentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vJA-Lo-Vzd"/>
+                        <viewControllerLayoutGuide type="bottom" id="3kr-Fu-9Gn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b8a-Ah-Pj5">
+                        <rect key="frame" x="0.0" y="0.0" width="386" height="540"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nZ1-nA-6LD">
+                                <rect key="frame" x="0.0" y="0.0" width="386" height="540"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="260" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Jb-Gt-uhz">
+                                        <rect key="frame" x="0.0" y="0.0" width="386" height="83"/>
+                                        <string key="text">Pay attention entirely to the sounds of the world around you. Do not label the sounds or think about their meanings. If your mind wanders, return to listening as soon as you realize it.</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DzJ-T1-ENU">
+                                        <rect key="frame" x="0.0" y="103" width="386" height="26"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sk-Fu-aKw" customClass="PTSDynamicTypeCountdownLabel">
+                                                <rect key="frame" x="164" y="0.0" width="59" height="26"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="A1g-Ha-LCA">
+                                        <rect key="frame" x="0.0" y="149" width="386" height="70"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ucq-8H-XUr">
+                                                <rect key="frame" x="174" y="0.0" width="39" height="70"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="255" verticalHuggingPriority="255" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2g-Eo-fsl">
+                                                        <rect key="frame" x="4" y="0.0" width="30" height="30"/>
+                                                        <state key="normal" title="Play"/>
+                                                        <connections>
+                                                            <action selector="handlePlayButtonPressed:" destination="DkG-jE-2rE" eventType="touchUpInside" id="fni-1q-Yih"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HT-Lh-i5Y">
+                                                        <rect key="frame" x="0.0" y="40" width="39" height="30"/>
+                                                        <state key="normal" title="Reset"/>
+                                                        <connections>
+                                                            <action selector="handleResetButtonPressed:" destination="DkG-jE-2rE" eventType="touchUpInside" id="ysA-KZ-MK4"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3hf-Pw-q3e" userLabel="Empty Filler View">
+                                        <rect key="frame" x="0.0" y="239" width="386" height="301"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nZ1-nA-6LD" secondAttribute="trailing" id="8NO-le-785"/>
+                            <constraint firstItem="nZ1-nA-6LD" firstAttribute="leading" secondItem="b8a-Ah-Pj5" secondAttribute="leading" id="N7u-cP-W7G"/>
+                            <constraint firstAttribute="bottom" secondItem="nZ1-nA-6LD" secondAttribute="bottom" id="Nx0-Cq-bFW"/>
+                            <constraint firstItem="nZ1-nA-6LD" firstAttribute="top" secondItem="b8a-Ah-Pj5" secondAttribute="top" id="UBq-5D-Gfs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countdownLabel" destination="2Sk-Fu-aKw" id="gEk-Ew-MmD"/>
+                        <outlet property="playButton" destination="B2g-Eo-fsl" id="KW8-rQ-fOc"/>
+                        <outlet property="resetButton" destination="2HT-Lh-i5Y" id="WKP-PI-hMl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m6j-3h-tjE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3720" y="2651"/>
+        </scene>
+        <!--PTSSongPlayerStoryboard-->
+        <scene sceneID="NSk-eZ-4A9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSSongPlayerStoryboard" id="kxs-SY-Xr8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k63-PQ-TXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4238.5" y="2359"/>
+        </scene>
+    </scenes>
+</document>

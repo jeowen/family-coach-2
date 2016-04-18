@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lXo-Gb-DPI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Help-->
+        <scene sceneID="XX9-uc-HE4">
+            <objects>
+                <tableViewController id="Ya1-uc-pgb" customClass="PTSManageSymptomsHelpMenuViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Aqv-aX-Etj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="660"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="Ya1-uc-pgb" id="Vet-1M-1iv"/>
+                            <outlet property="delegate" destination="Ya1-uc-pgb" id="a4W-Vx-8UX"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Help" id="oLW-2Z-OWq">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="EaW-qz-R6u"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" style="done" id="ZTe-eM-AEU">
+                            <connections>
+                                <action selector="dismissHelpMenu:" destination="Ya1-uc-pgb" id="NQ6-2J-kp9"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="660"/>
+                    <connections>
+                        <segue destination="xEZ-0o-rOq" kind="show" identifier="ShowSegmentedTextViewSegue" id="ETG-Eb-o5w"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ut3-9Z-RYm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600" y="144"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="6id-hz-2um">
+            <objects>
+                <viewController id="xEZ-0o-rOq" customClass="PTSSegmentedTextViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Help" id="u6N-Mt-2qZ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="0ZC-wZ-TMt"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKY-2t-hVN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2327" y="144"/>
+        </scene>
+        <!--Manage-->
+        <scene sceneID="9yb-hn-1ud">
+            <objects>
+                <navigationController title="Manage" id="lXo-Gb-DPI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Manage" image="TabBar - Manage Symptoms Icon" id="VPB-Tt-kh9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Cbi-XE-qqK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="z4n-d8-krh" kind="relationship" relationship="rootViewController" id="0mX-5Z-jCV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="97H-kZ-djB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-654" y="851"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="c1C-Im-qKp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HeF-MZ-o45" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qly-0i-cCD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ya1-uc-pgb" kind="relationship" relationship="rootViewController" id="VLM-Ov-3sW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="beR-1O-8JM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="114"/>
+        </scene>
+        <!--Manage Symptoms Root View Controller-->
+        <scene sceneID="KcO-zX-lLl">
+            <objects>
+                <viewController id="z4n-d8-krh" customClass="PTSManageSymptomsRootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uyH-bB-XCe"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dow-Rp-vb4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pIc-Ch-fjr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="DtK-Kr-Xqb">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qid-LT-rb4" userLabel="Container View - Buttons">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="487"/>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="9ZD-ki-hmJ" kind="embed" id="8u6-3h-wdq"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zf-VA-VB7" userLabel="Container View - Table">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="487"/>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="CBh-to-TCu" kind="embed" id="TEO-5b-7wM"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dow-Rp-vb4" firstAttribute="top" secondItem="DtK-Kr-Xqb" secondAttribute="bottom" id="Gjv-iV-e34"/>
+                            <constraint firstItem="DtK-Kr-Xqb" firstAttribute="top" secondItem="uyH-bB-XCe" secondAttribute="bottom" id="PBF-43-93R"/>
+                            <constraint firstAttribute="trailing" secondItem="DtK-Kr-Xqb" secondAttribute="trailing" id="bqj-Pq-Xnz"/>
+                            <constraint firstItem="DtK-Kr-Xqb" firstAttribute="leading" secondItem="pIc-Ch-fjr" secondAttribute="leading" id="gbm-Js-vSr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="btP-Kg-hHb">
+                        <nil key="title"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" style="done" id="Hav-uC-c7z">
+                            <connections>
+                                <action selector="showHomeScreen:" destination="UhI-FU-c5Z" id="rAX-Ld-ONj"/>
+                            </connections>
+                        </barButtonItem>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="jyU-Ua-aaL">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <segments>
+                                <segment title="Symptoms"/>
+                                <segment title="Tools"/>
+                            </segments>
+                            <connections>
+                                <action selector="handleSegmentedControlValueChanged:" destination="z4n-d8-krh" eventType="valueChanged" id="jzA-Ey-Yxx"/>
+                            </connections>
+                        </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="T6m-19-Ymg">
+                            <connections>
+                                <segue destination="HeF-MZ-o45" kind="presentation" id="RK2-rd-WDO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="segmentedControl" destination="jyU-Ua-aaL" id="hfY-jg-53C"/>
+                        <outlet property="symptomsContainerView" destination="qid-LT-rb4" id="ALr-ca-hqY"/>
+                        <outlet property="toolsContainerView" destination="2zf-VA-VB7" id="Ov2-Js-y8V"/>
+                        <segue destination="6k9-Rc-e59" kind="presentation" identifier="ShowDistressMeterSegue" id="Oyf-sF-l6H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UhI-FU-c5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130" y="851"/>
+        </scene>
+        <!--Symptoms Menu View Controller-->
+        <scene sceneID="RhN-Fi-s4f">
+            <objects>
+                <viewController id="9ZD-ki-hmJ" customClass="PTSSymptomsMenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oYX-2s-ZpC"/>
+                        <viewControllerLayoutGuide type="bottom" id="eEk-Nt-qFY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HCE-JE-Pwt">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TdU-zc-f9e">
+                                <rect key="frame" x="0.0" y="0.0" width="300" height="487"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KS5-rA-p2Z">
+                                        <rect key="frame" x="79" y="0.0" width="142" height="61"/>
+                                        <animations/>
+                                        <state key="normal" title="Reminded of Trauma"/>
+                                        <connections>
+                                            <action selector="handleRemindedOfTraumaButtonPressed:" destination="9ZD-ki-hmJ" eventType="touchUpInside" id="1Q5-jJ-6Br"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLE-Ti-sW9">
+                                        <rect key="frame" x="90" y="61" width="120" height="61"/>
+                                        <animations/>
+                                        <state key="normal" title="Avoiding Triggers"/>
+                                        <connections>
+                                            <action selector="handleAvoidingTriggersButtonPressed:" destination="9ZD-ki-hmJ" eventType="touchUpInside" id="AYz-4D-hH4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O73-pz-hrt">
+                                        <rect key="frame" x="59" y="122" width="182" height="61"/>
+                                        <animations/>
+                                        <state key="normal" title="Disconnected from People"/>
+                                        <connections>
+                                            <action selector="handleDisconnectedFromPeopleButtonPressed:" destination="9ZD-ki-hmJ" eventType="touchUpInside" id="Xnn-s0-Xzj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTx-Zg-PM8">
+                                        <rect key="frame" x="60" y="183" width="181" height="61"/>
+                                        <animations/>
+                                        <state key="normal" title="Disconnected from Reality"/>
+                                        <connections>
+                                            <action selector="handleDisconnectedFromRealityButtonPressed:" destination="9ZD-ki-hmJ" eventType="touchUpInside" id="4kI-Rt-UB2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pS1-Cy-Vv3">
+                                        <rect key="frame" x="98" y="244" width="104" height="60"/>
+                                        <animations/>
+                                        <state key="normal" title="Sad / Hopeless"/>
+                                        <connections>
+                                            <action selector="handleSadHopelessButtonPressed:" destination="9ZD-ki-hmJ" eventType="touchUpInside" id="gdZ-Ax-pWS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXr-ru-8zJ">
+                                        <rect key="frame" x="89" y="304" width="122" height="61"/>
+                                        <animations/>
+                                        <state key="normal" title="Worried / Anxious"/>
+                                        <connections>
+                                            <action selector="handleWorriedAnxiousButtonPressed:" destination="9ZD-ki-hmJ" eventType="touchUpInside" id="Ml2-Pr-mwT"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHc-W3-Lmp">
+                                        <rect key="frame" x="130" y="365" width="41" height="61"/>
+                                        <animations/>
+                                        <state key="normal" title="Angry"/>
+                                        <connections>
+                                            <action selector="handleAngryButtonPressed:" destination="9ZD-ki-hmJ" eventType="touchUpInside" id="Sio-IY-A3X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmU-mh-R37">
+                                        <rect key="frame" x="96" y="426" width="109" height="61"/>
+                                        <animations/>
+                                        <state key="normal" title="Unable to Sleep"/>
+                                        <connections>
+                                            <action selector="handleUnableToSleepButtonPressed:" destination="9ZD-ki-hmJ" eventType="touchUpInside" id="uLU-o4-LzE"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TdU-zc-f9e" firstAttribute="top" secondItem="oYX-2s-ZpC" secondAttribute="bottom" id="3H5-Ev-7gW"/>
+                            <constraint firstAttribute="trailing" secondItem="TdU-zc-f9e" secondAttribute="trailing" id="BSD-2u-Zle"/>
+                            <constraint firstItem="eEk-Nt-qFY" firstAttribute="top" secondItem="TdU-zc-f9e" secondAttribute="bottom" id="iaF-R4-aTJ"/>
+                            <constraint firstItem="TdU-zc-f9e" firstAttribute="leading" secondItem="HCE-JE-Pwt" secondAttribute="leading" id="y5x-eK-Bgw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKu-sP-fxB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110" y="1574.5"/>
+        </scene>
+        <!--Tools Menu View Controller-->
+        <scene sceneID="qt8-0p-9CG">
+            <objects>
+                <tableViewController id="CBh-to-TCu" customClass="PTSToolsMenuViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="NVK-c3-yhi">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="CBh-to-TCu" id="hMd-dR-i34"/>
+                            <outlet property="delegate" destination="CBh-to-TCu" id="deU-d3-slx"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21c-p9-KLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="361" y="1574.5"/>
+        </scene>
+        <!--PTSDistressMeterStoryboard-->
+        <scene sceneID="N5u-tx-61u">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSDistressMeterStoryboard" id="6k9-Rc-e59" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i94-4E-DpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="851"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabBar - Manage Symptoms Icon" width="26" height="26"/>
+    </resources>
+</document>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="WPV-y1-Uev">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--EULA-->
+        <scene sceneID="kes-w5-jae">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Wur-XX-XrJ" customClass="PTSEULAViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yEA-hm-Yeq"/>
+                        <viewControllerLayoutGuide type="bottom" id="8cB-vf-QSZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4q4-9z-iAe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2h-gc-OZ5">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOb-7l-sBA">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="99"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCt-qW-wYn">
+                                                <rect key="frame" x="276" y="49" width="49" height="30"/>
+                                                <state key="normal" title="I Agree"/>
+                                                <connections>
+                                                    <segue destination="APO-cs-dzC" kind="show" id="G4G-KH-3Lv"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EULA text goes here..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03p-D4-hf8">
+                                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="03p-D4-hf8" firstAttribute="top" secondItem="WOb-7l-sBA" secondAttribute="top" constant="20" symbolic="YES" id="8ZS-kF-OHD"/>
+                                            <constraint firstAttribute="trailing" secondItem="03p-D4-hf8" secondAttribute="trailing" constant="20" symbolic="YES" id="G31-jP-Nym"/>
+                                            <constraint firstItem="MCt-qW-wYn" firstAttribute="centerX" secondItem="WOb-7l-sBA" secondAttribute="centerX" id="R2x-V7-K17"/>
+                                            <constraint firstItem="MCt-qW-wYn" firstAttribute="top" secondItem="03p-D4-hf8" secondAttribute="bottom" constant="8" symbolic="YES" id="TKh-YI-N11"/>
+                                            <constraint firstItem="03p-D4-hf8" firstAttribute="leading" secondItem="WOb-7l-sBA" secondAttribute="leading" constant="20" symbolic="YES" id="rgA-aU-Gzf"/>
+                                            <constraint firstAttribute="bottom" secondItem="MCt-qW-wYn" secondAttribute="bottom" constant="20" symbolic="YES" id="thP-vo-cQa"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WOb-7l-sBA" firstAttribute="leading" secondItem="K2h-gc-OZ5" secondAttribute="leading" id="4Ui-wM-3cD"/>
+                                    <constraint firstItem="WOb-7l-sBA" firstAttribute="top" secondItem="K2h-gc-OZ5" secondAttribute="top" id="AUs-bK-8eq"/>
+                                    <constraint firstAttribute="trailing" secondItem="WOb-7l-sBA" secondAttribute="trailing" id="FlJ-Ro-mhY"/>
+                                    <constraint firstAttribute="bottom" secondItem="WOb-7l-sBA" secondAttribute="bottom" id="qZK-Cc-aQ6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WOb-7l-sBA" firstAttribute="width" secondItem="4q4-9z-iAe" secondAttribute="width" id="9iA-Nc-ypD"/>
+                            <constraint firstAttribute="trailing" secondItem="K2h-gc-OZ5" secondAttribute="trailing" id="EHy-vb-MTy"/>
+                            <constraint firstItem="K2h-gc-OZ5" firstAttribute="top" secondItem="yEA-hm-Yeq" secondAttribute="bottom" id="anf-kf-IZ2"/>
+                            <constraint firstItem="K2h-gc-OZ5" firstAttribute="leading" secondItem="4q4-9z-iAe" secondAttribute="leading" id="d7d-tf-OCH"/>
+                            <constraint firstItem="8cB-vf-QSZ" firstAttribute="top" secondItem="K2h-gc-OZ5" secondAttribute="bottom" id="qcB-w0-FiX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="EULA" id="VsF-yK-eWf"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="03p-D4-hf8" id="d2F-8E-fr6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNa-hw-W2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="428"/>
+        </scene>
+        <!--Welcome to PTSD Coach!-->
+        <scene sceneID="SY4-oE-5Vh">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="APO-cs-dzC" customClass="PTSWelcomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mj7-Nq-qQb"/>
+                        <viewControllerLayoutGuide type="bottom" id="K8c-Gv-wfC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="T8F-gF-gN1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBm-wq-cZa">
+                                <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cwq-vc-b55">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="137"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome text goes here..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edg-Rd-irN">
+                                                <rect key="frame" x="20" y="20" width="560" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7R4-fS-wbH">
+                                                <rect key="frame" x="243" y="49" width="114" height="30"/>
+                                                <state key="normal" title="Personalize Now"/>
+                                                <connections>
+                                                    <segue destination="Jh7-KV-9vC" kind="presentation" identifier="ShowPersonalizeViewControllerSegue" id="hHH-dT-Bl0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvc-nz-BsE">
+                                                <rect key="frame" x="259" y="87" width="83" height="30"/>
+                                                <state key="normal" title="Go to Home"/>
+                                                <connections>
+                                                    <action selector="showApplicationStoryboard:" destination="8L0-r0-qPP" eventType="touchUpInside" id="DtP-RU-6AF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="nvc-nz-BsE" firstAttribute="top" secondItem="7R4-fS-wbH" secondAttribute="bottom" constant="8" symbolic="YES" id="AzE-AN-5dy"/>
+                                            <constraint firstItem="7R4-fS-wbH" firstAttribute="centerX" secondItem="Cwq-vc-b55" secondAttribute="centerX" id="KjT-AN-Df1"/>
+                                            <constraint firstItem="edg-Rd-irN" firstAttribute="leading" secondItem="Cwq-vc-b55" secondAttribute="leading" constant="20" symbolic="YES" id="NZV-KJ-mfT"/>
+                                            <constraint firstItem="nvc-nz-BsE" firstAttribute="centerX" secondItem="Cwq-vc-b55" secondAttribute="centerX" id="TRX-Ss-jUQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="edg-Rd-irN" secondAttribute="trailing" constant="20" symbolic="YES" id="kUZ-48-EgW"/>
+                                            <constraint firstAttribute="bottom" secondItem="nvc-nz-BsE" secondAttribute="bottom" constant="20" symbolic="YES" id="kbd-Zg-844"/>
+                                            <constraint firstItem="7R4-fS-wbH" firstAttribute="top" secondItem="edg-Rd-irN" secondAttribute="bottom" constant="8" symbolic="YES" id="m2M-x2-OTd"/>
+                                            <constraint firstItem="edg-Rd-irN" firstAttribute="top" secondItem="Cwq-vc-b55" secondAttribute="top" constant="20" symbolic="YES" id="yWJ-1h-SU9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Cwq-vc-b55" firstAttribute="top" secondItem="pBm-wq-cZa" secondAttribute="top" id="1bn-W0-8Db"/>
+                                    <constraint firstItem="Cwq-vc-b55" firstAttribute="leading" secondItem="pBm-wq-cZa" secondAttribute="leading" id="DOT-lF-UzI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cwq-vc-b55" secondAttribute="trailing" id="gSu-Hf-0wL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cwq-vc-b55" secondAttribute="bottom" id="mc9-zv-OQj"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cwq-vc-b55" firstAttribute="width" secondItem="T8F-gF-gN1" secondAttribute="width" id="AEV-OC-JXy"/>
+                            <constraint firstItem="K8c-Gv-wfC" firstAttribute="top" secondItem="pBm-wq-cZa" secondAttribute="bottom" id="HOM-3R-wUp"/>
+                            <constraint firstItem="pBm-wq-cZa" firstAttribute="leading" secondItem="T8F-gF-gN1" secondAttribute="leading" id="Qza-sh-oYp"/>
+                            <constraint firstItem="pBm-wq-cZa" firstAttribute="top" secondItem="Mj7-Nq-qQb" secondAttribute="bottom" id="UpQ-oc-txf"/>
+                            <constraint firstAttribute="trailing" secondItem="pBm-wq-cZa" secondAttribute="trailing" id="vBm-i0-yyw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome to PTSD Coach!" id="1bt-aV-WSi"/>
+                    <connections>
+                        <outlet property="contentLabel" destination="edg-Rd-irN" id="yQ1-34-niN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8L0-r0-qPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628" y="428"/>
+        </scene>
+        <!--PersonalizeViewControllerIdentifier-->
+        <scene sceneID="YDY-pN-vtk">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSSettingsStoryboard" referencedIdentifier="PersonalizeViewControllerIdentifier" id="0X0-3b-aHA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="t8P-fu-bw4"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="inM-ea-oeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3038.5" y="428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3c4-Qg-c85">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WPV-y1-Uev" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eNr-xR-zvV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wur-XX-XrJ" kind="relationship" relationship="rootViewController" id="Jqv-2u-n25"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfO-kY-P6x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ecQ-EZ-Ljd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Jh7-KV-9vC" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yus-fZ-ZqK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="eco-WM-hxA">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="0X0-3b-aHA" kind="relationship" relationship="rootViewController" id="edY-rg-9tA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZb-e8-HT1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2393" y="428"/>
+        </scene>
+    </scenes>
+</document>

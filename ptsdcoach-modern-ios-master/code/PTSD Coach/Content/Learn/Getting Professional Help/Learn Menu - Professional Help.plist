@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>menuItems</key>
+	<array>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Im in crisis.rtf</string>
+			<key>menuTitle</key>
+			<string>I'm in crisis</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What is counseling therapy.rtf</string>
+			<key>menuTitle</key>
+			<string>What is counseling (therapy)?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - How do I find a counselor therapist.rtf</string>
+			<key>menuTitle</key>
+			<string>How do I find a counselor/therapist?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Do I need professional help.rtf</string>
+			<key>menuTitle</key>
+			<string>Do I need professional help?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Why do people seek counseling.rtf</string>
+			<key>menuTitle</key>
+			<string>Why do people seek counseling?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - How can a therapist help me.rtf</string>
+			<key>menuTitle</key>
+			<string>How can a therapist help me?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Is counseling confidential.rtf</string>
+			<key>menuTitle</key>
+			<string>Is counseling confidential?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Will therapy really work.rtf</string>
+			<key>menuTitle</key>
+			<string>Will therapy really work?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - PTSD treatments that work.rtf</string>
+			<key>menuTitle</key>
+			<string>PTSD treatments that work</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - How much does counseling cost.rtf</string>
+			<key>menuTitle</key>
+			<string>How much does counseling cost?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - I want counseling but I work all day.rtf</string>
+			<key>menuTitle</key>
+			<string>I want counseling, but I work all day</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Transportation to appointments.rtf</string>
+			<key>menuTitle</key>
+			<string>Transportation to appointments</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Im embarrassed to go for counseling.rtf</string>
+			<key>menuTitle</key>
+			<string>I'm embarrassed to go for counseling</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - Who can help me.rtf</string>
+			<key>menuTitle</key>
+			<string>Who can help me?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What does a primary care physician do.rtf</string>
+			<key>menuTitle</key>
+			<string>What does a primary care physician do?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What does a social worker do.rtf</string>
+			<key>menuTitle</key>
+			<string>What does a social worker do?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What does a psychologist do.rtf</string>
+			<key>menuTitle</key>
+			<string>What does a psychologist do?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What does a psychiatrist do.rtf</string>
+			<key>menuTitle</key>
+			<string>What does a psychiatrist do?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>Learn - What does a pastoral counselor or chaplain do.rtf</string>
+			<key>menuTitle</key>
+			<string>What does a pastoral counselor or chaplain do?</string>
+			<key>pageTitle</key>
+			<string>Getting Help</string>
+		</dict>
+	</array>
+</dict>
+</plist>

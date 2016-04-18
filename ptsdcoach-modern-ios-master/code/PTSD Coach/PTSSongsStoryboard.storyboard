@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aX6-Wh-IJ0">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Songs-->
+        <scene sceneID="R7k-pA-0FB">
+            <objects>
+                <tableViewController title="Songs" id="aX6-Wh-IJ0" customClass="PTSSongsViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="GKc-I2-ytp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SongItemTableViewCellIdentifier" id="Cgn-90-YKr" customClass="PTSSongMediaItemTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="600" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cgn-90-YKr" id="eyw-5h-9ZW">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gqr-8c-0HJ">
+                                            <rect key="frame" x="15" y="4" width="581" height="66"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlb-FT-ToI">
+                                                    <rect key="frame" x="0.0" y="0.0" width="581" height="20"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2uV-zb-8Ta">
+                                                    <rect key="frame" x="0.0" y="24" width="581" height="42"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </stackView>
+                                    </subviews>
+                                    <animations/>
+                                    <constraints>
+                                        <constraint firstItem="gqr-8c-0HJ" firstAttribute="leading" secondItem="eyw-5h-9ZW" secondAttribute="leading" constant="15" id="Goa-sM-Ams"/>
+                                        <constraint firstAttribute="bottom" secondItem="gqr-8c-0HJ" secondAttribute="bottom" constant="4" id="VSX-bO-T3R"/>
+                                        <constraint firstItem="gqr-8c-0HJ" firstAttribute="top" secondItem="eyw-5h-9ZW" secondAttribute="top" constant="4" id="vQH-Us-GMc"/>
+                                        <constraint firstAttribute="trailing" secondItem="gqr-8c-0HJ" secondAttribute="trailing" constant="4" id="zbG-Zu-xnP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <animations/>
+                                <connections>
+                                    <outlet property="primaryLabel" destination="xlb-FT-ToI" id="oYj-QH-KCi"/>
+                                    <outlet property="secondaryLabel" destination="2uV-zb-8Ta" id="mgQ-i8-hnI"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aX6-Wh-IJ0" id="hxh-xe-8AA"/>
+                            <outlet property="delegate" destination="aX6-Wh-IJ0" id="B1r-dp-qIi"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Songs" id="Jgh-wF-tuh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="QzA-FY-nOG">
+                            <connections>
+                                <action selector="handleAddSongButton:" destination="aX6-Wh-IJ0" id="S8D-XO-ReV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="noSongsLabel" destination="BZ1-xJ-O1h" id="pFp-iJ-WOM"/>
+                    </connections>
+                </tableViewController>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BZ1-xJ-O1h">
+                    <rect key="frame" x="0.0" y="0.0" width="274" height="73"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <string key="text">No songs
+Tap the + button to add songs</string>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OCf-1A-bQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="552" y="309"/>
+        </scene>
+    </scenes>
+</document>

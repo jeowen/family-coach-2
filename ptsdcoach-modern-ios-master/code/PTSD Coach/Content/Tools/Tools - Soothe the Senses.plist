@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<array>
+		<dict>
+			<key>title</key>
+			<string>Sound</string>
+			<key>tip</key>
+			<string>Sing your favorite songs, or play them and sing along. </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sound</string>
+			<key>tip</key>
+			<string>Listen to music, and let yourself get lost in the sounds. </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sound</string>
+			<key>tip</key>
+			<string>Listen to pleasurable sounds, like birds, or the ocean. </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sound</string>
+			<key>tip</key>
+			<string>Learn to play an instrument and play tunes for your own enjoyment.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sound</string>
+			<key>tip</key>
+			<string>Be mindful of the sounds around you </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sound</string>
+			<key>tip</key>
+			<string>Turn on a movie and listen to the sounds, tones and textures of human voices.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sound</string>
+			<key>tip</key>
+			<string>Listen to an meditation or lecture online or on the radio about something interesting to you.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sound</string>
+			<key>tip</key>
+			<string>Go for a walk in nature and listen to the sounds around you.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sight</string>
+			<key>tip</key>
+			<string>Go for a walk in the park or a hike in nature. Take in the beauty around you.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sight</string>
+			<key>tip</key>
+			<string>Go to a museum with beautiful art and enjoy what catches your eye. </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sight</string>
+			<key>tip</key>
+			<string>Sit in the lobby of a beautiful hotel and notice the details of the décor.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sight</string>
+			<key>tip</key>
+			<string>Buy a beautiful flower or bouquet and make one space in a room pretty.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sight</string>
+			<key>tip</key>
+			<string>Go outside at night in the fresh air and look at the stars.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Sight</string>
+			<key>tip</key>
+			<string>Look at good travel photos in a book or on the internet; let them inspire you.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Taste</string>
+			<key>tip</key>
+			<string>Eat your favorite meal; really pay attention as you savor it.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Taste</string>
+			<key>tip</key>
+			<string>Have a soothing drink like herbal tea or hot chocolate and enjoy the flavors.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Taste</string>
+			<key>tip</key>
+			<string>Treat yourself to dessert and eat each bite mindfully, with pleasure </string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Taste</string>
+			<key>tip</key>
+			<string>Suck on a piece of peppermint candy and let it melt in your mouth.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Taste</string>
+			<key>tip</key>
+			<string>Chew your favorite gum and savor its flavor.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Taste</string>
+			<key>tip</key>
+			<string>Sample flavors in an ice cream store and notice the subtle differences.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Touch</string>
+			<key>tip</key>
+			<string>Get a massage. Let yourself really focus on and enjoy the sensations.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Touch</string>
+			<key>tip</key>
+			<string>Sit in the sun (please use sunscreen), and enjoy the warmth.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Touch</string>
+			<key>tip</key>
+			<string>Pet a dog or cat, and focus on the softness and pleasant sensations.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Touch</string>
+			<key>tip</key>
+			<string>Soak your feet and allow any tension or soreness to melt away.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Touch</string>
+			<key>tip</key>
+			<string>Sink into a comfortable chair or couch, at home or in a luxurious hotel lobby, and let your body relax back into it.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Touch</string>
+			<key>tip</key>
+			<string>Hug someone and feel the comfort of their touch.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Smell</string>
+			<key>tip</key>
+			<string>Smell things that are pleasant, like perfume, the ocean, or oranges. Pay close attention as you enjoy the scents.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Smell</string>
+			<key>tip</key>
+			<string>Light a scented candle and enjoy the fragrance in the air.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Smell</string>
+			<key>tip</key>
+			<string>Buy yourself a flower that has a nice smell, and allow yourself to lean in and smell when you walk by it at home.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Smell</string>
+			<key>tip</key>
+			<string>Boil some cinnamon on the stove for 20 minutes and enjoy the smell as it fills your home.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Smell</string>
+			<key>tip</key>
+			<string>Take a walk in a wooded area and breathe in the fresh smells of nature.</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>Smell</string>
+			<key>tip</key>
+			<string>Put lemon oil on your furniture and enjoy the scent.</string>
+		</dict>
+	</array>
+</plist>

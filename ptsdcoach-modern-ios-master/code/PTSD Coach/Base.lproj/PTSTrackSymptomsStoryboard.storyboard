@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yAe-mD-Osx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Track Symptoms - Root-->
+        <scene sceneID="grq-T0-vU3">
+            <objects>
+                <tableViewController id="kXT-rx-34V" userLabel="Track Symptoms - Root" customClass="PTSTrackSymptomsRootViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="WuJ-wR-mny">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="kXT-rx-34V" id="Fg5-Ge-GzP"/>
+                            <outlet property="delegate" destination="kXT-rx-34V" id="uKF-dO-oR1"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Track" image="TabBar - Track Symptoms Icon" id="aHh-wf-Ov5"/>
+                    <navigationItem key="navigationItem" title="Track Symptoms" id="B8o-g0-pCV">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="chj-gs-Qw7"/>
+                        <barButtonItem key="leftBarButtonItem" title="Home" style="done" id="vgX-eV-TOR">
+                            <connections>
+                                <action selector="showHomeScreen:" destination="o7V-S4-hEA" id="fZv-4Q-AUP"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="1NF-vO-lpX">
+                            <connections>
+                                <segue destination="Rd8-mz-KNz" kind="presentation" identifier="ShowTrackSymptomsHelpSegue" id="AX0-St-14g"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <segue destination="Upy-ai-zlS" kind="show" identifier="ShowNoHistorySegue" id="2Iy-nQ-aK1"/>
+                        <segue destination="TRR-T7-y9p" kind="show" identifier="ShowAssessmentTooEarlySegue" id="hnI-ai-vDy"/>
+                        <segue destination="k57-yj-GZT" kind="show" identifier="ShowStartAssessmentSegue" id="tbg-oM-x0O"/>
+                        <segue destination="5lJ-ZT-XiV" kind="show" identifier="ShowAssessmentHistorySegue" id="Bp6-3G-uub"/>
+                        <segue destination="w1K-VN-Y2f" kind="show" identifier="ShowRemindersSegue" id="yFu-fQ-5dr"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7V-S4-hEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="294"/>
+        </scene>
+        <!--PTSHelpViewerStoryboard-->
+        <scene sceneID="8vR-eT-KeR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSHelpViewerStoryboard" id="Rd8-mz-KNz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0To-e0-VSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734.5" y="294"/>
+        </scene>
+        <!--Assessments-->
+        <scene sceneID="Elf-3V-irl">
+            <objects>
+                <viewController id="k57-yj-GZT" customClass="PTSAssessmentIntroductionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SZv-gI-oTM"/>
+                        <viewControllerLayoutGuide type="bottom" id="gAt-km-hbk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ujk-wT-TB4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bvT-5r-2ko">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="quP-l3-cM4" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="170"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kae-XG-eAp">
+                                                <rect key="frame" x="20" y="8" width="560" height="154"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0e-mE-t7V" customClass="PTSDynamicTypeLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="104"/>
+                                                        <animations/>
+                                                        <string key="text">On the following screens are some issues that Veterans and military service members sometimes have in response to stressful military experiences. Please read each problem carefully, then select the option that best describes how much you have been bothered by each problem in the past month. Please select only one answer for each question.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="DhL-83-TV2">
+                                                        <rect key="frame" x="0.0" y="124" width="560" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXx-mk-ewk">
+                                                                <rect key="frame" x="264" y="0.0" width="32" height="30"/>
+                                                                <animations/>
+                                                                <state key="normal" title="Next"/>
+                                                                <connections>
+                                                                    <segue destination="PDC-U3-GnP" kind="show" identifier="ShowAssessmentQuestionSegue" id="tjs-VP-K0u"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                </subviews>
+                                                <animations/>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="kae-XG-eAp" secondAttribute="trailing" id="IzG-EV-XAz"/>
+                                            <constraint firstItem="kae-XG-eAp" firstAttribute="leading" secondItem="quP-l3-cM4" secondAttribute="leadingMargin" id="L4v-Mo-j4J"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="kae-XG-eAp" secondAttribute="bottom" id="Ms3-OT-GU6"/>
+                                            <constraint firstItem="kae-XG-eAp" firstAttribute="top" secondItem="quP-l3-cM4" secondAttribute="topMargin" id="o2m-Aw-yLm"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="quP-l3-cM4" secondAttribute="bottom" id="F6R-NO-xSl"/>
+                                    <constraint firstItem="quP-l3-cM4" firstAttribute="top" secondItem="bvT-5r-2ko" secondAttribute="top" id="FUb-fF-Aza"/>
+                                    <constraint firstItem="quP-l3-cM4" firstAttribute="leading" secondItem="bvT-5r-2ko" secondAttribute="leading" id="MHa-sl-gYY"/>
+                                    <constraint firstAttribute="trailing" secondItem="quP-l3-cM4" secondAttribute="trailing" id="zzi-Vg-gCC"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="quP-l3-cM4" firstAttribute="width" secondItem="Ujk-wT-TB4" secondAttribute="width" id="Cxv-gI-ZaC"/>
+                            <constraint firstItem="bvT-5r-2ko" firstAttribute="leading" secondItem="Ujk-wT-TB4" secondAttribute="leading" id="Ttg-0l-Pgp"/>
+                            <constraint firstAttribute="bottom" secondItem="bvT-5r-2ko" secondAttribute="bottom" id="cGl-HE-YWK"/>
+                            <constraint firstItem="bvT-5r-2ko" firstAttribute="top" secondItem="Ujk-wT-TB4" secondAttribute="top" id="eSu-Wo-jg3"/>
+                            <constraint firstAttribute="trailing" secondItem="bvT-5r-2ko" secondAttribute="trailing" id="uGA-Jl-aQa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Assessments" id="lce-YC-Bpi">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Io0-8L-HST"/>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="PvZ-oN-HJ7">
+                            <connections>
+                                <segue destination="yIl-Tp-tGC" kind="presentation" identifier="ShowTrackSymptomsHelpSegue" id="r17-SY-1Pd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q1q-KE-I0q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="-77"/>
+        </scene>
+        <!--PTSRemindersStoryboard-->
+        <scene sceneID="m3y-vd-Pw8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSRemindersStoryboard" id="w1K-VN-Y2f" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kG7-p3-9pz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102.5" y="791"/>
+        </scene>
+        <!--Assessment History View Controller-->
+        <scene sceneID="SnV-pm-O5h">
+            <objects>
+                <viewController id="5lJ-ZT-XiV" customClass="PTSAssessmentHistoryViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="unf-Cb-vk7"/>
+                        <viewControllerLayoutGuide type="bottom" id="idT-sP-JKu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aNl-Yc-7yI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="tFu-5z-vOO">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gXa-CZ-bqU">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="487"/>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="fp6-rQ-XjY" kind="embed" id="c8D-V9-kar"/>
+                                        </connections>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYy-QC-mEY">
+                                        <rect key="frame" x="300" y="0.0" width="300" height="487"/>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="NTs-0m-Dy0" kind="embed" id="Me7-5p-H4Q"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <animations/>
+                            </stackView>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OXi-vf-A8g" customClass="PTSNavigationBarImitationView">
+                                <rect key="frame" x="120" y="-4" width="0.0" height="40"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Mjk-H4-ymz">
+                                        <rect key="frame" x="-120" y="4" width="240" height="29"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="240" id="WwM-xy-57x"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Graph"/>
+                                            <segment title="Details"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Mjk-H4-ymz" firstAttribute="centerX" secondItem="OXi-vf-A8g" secondAttribute="centerX" id="1tX-EN-Pqp"/>
+                                    <constraint firstItem="Mjk-H4-ymz" firstAttribute="top" secondItem="OXi-vf-A8g" secondAttribute="top" constant="4" id="RmR-Mm-emi"/>
+                                    <constraint firstAttribute="bottom" secondItem="Mjk-H4-ymz" secondAttribute="bottom" constant="8" id="rmT-Mi-zrr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="idT-sP-JKu" firstAttribute="top" secondItem="tFu-5z-vOO" secondAttribute="bottom" id="J7L-6u-Yex"/>
+                            <constraint firstItem="tFu-5z-vOO" firstAttribute="leading" secondItem="aNl-Yc-7yI" secondAttribute="leading" id="K0V-xK-a4U"/>
+                            <constraint firstItem="tFu-5z-vOO" firstAttribute="top" secondItem="unf-Cb-vk7" secondAttribute="bottom" id="Qsb-o6-cTR"/>
+                            <constraint firstAttribute="trailing" secondItem="tFu-5z-vOO" secondAttribute="trailing" id="cKR-O4-3Eg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JOb-oB-6Jt">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="gcz-Sm-Mp9">
+                            <rect key="frame" x="180" y="7" width="240" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
+                            <segments>
+                                <segment title="Graph"/>
+                                <segment title="Details"/>
+                            </segments>
+                            <connections>
+                                <action selector="handleSegmentedControlValueChanged:" destination="5lJ-ZT-XiV" eventType="valueChanged" id="UWw-rk-UrH"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="assessmentsContainerView" destination="qYy-QC-mEY" id="RA5-re-qDY"/>
+                        <outlet property="graphContainerView" destination="gXa-CZ-bqU" id="h3b-SA-1iS"/>
+                        <outlet property="segmentedControl" destination="gcz-Sm-Mp9" id="iBj-cx-ywK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="plB-KA-1W7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1085" y="1066"/>
+        </scene>
+        <!--PTSHelpViewerStoryboard-->
+        <scene sceneID="IH6-O8-KB8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PTSHelpViewerStoryboard" id="yIl-Tp-tGC" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nhI-GE-Obw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1580.5" y="-494"/>
+        </scene>
+        <!--Question 1 of 1-->
+        <scene sceneID="jzr-yG-vdL">
+            <objects>
+                <tableViewController storyboardIdentifier="PTSAssessmentQuestionViewControllerIdentifier" id="PDC-U3-GnP" customClass="PTSAssessmentQuestionViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="BXc-nB-aCj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="PDC-U3-GnP" id="80Y-ef-caw"/>
+                            <outlet property="delegate" destination="PDC-U3-GnP" id="PjV-a9-coQ"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Question 1 of 1" id="k28-DC-3D1">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="Nmb-bV-dJb"/>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Next" id="3KW-yI-Ju5">
+                            <connections>
+                                <action selector="handleNextButtonTapped:" destination="PDC-U3-GnP" id="Ugh-ah-aaA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="nextBarButtonItem" destination="3KW-yI-Ju5" id="yy5-68-ts5"/>
+                        <segue destination="bNp-tl-T7G" kind="show" identifier="ShowAssessmentFeedbackSegue" id="7VC-Ft-Vcc"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u39-fo-bCB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792" y="-77"/>
+        </scene>
+        <!--Feedback-->
+        <scene sceneID="9d4-lc-hk4">
+            <objects>
+                <viewController id="bNp-tl-T7G" customClass="PTSAssessmentFeedbackViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="et4-H7-Ucc"/>
+                        <viewControllerLayoutGuide type="bottom" id="QCh-ai-I6D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YcS-Z0-kZf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7L-aU-wKA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ic6-Dl-IMj" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="184"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="1mJ-ma-EDf">
+                                                <rect key="frame" x="20" y="8" width="560" height="168"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="260" verticalHuggingPriority="260" text="Total Score:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ku-Lq-YIS" customClass="PTSDynamicTypeLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="20"/>
+                                                        <animations/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y4E-BG-52y" customClass="PTSSegmentedTextView">
+                                                        <rect key="frame" x="0.0" y="40" width="560" height="128"/>
+                                                        <animations/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="128" placeholder="YES" id="gCp-xN-XBU"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="useScrollView" value="NO"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <animations/>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="1mJ-ma-EDf" secondAttribute="trailing" id="CEn-LG-O7h"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="1mJ-ma-EDf" secondAttribute="bottom" id="EFJ-BU-76t"/>
+                                            <constraint firstItem="1mJ-ma-EDf" firstAttribute="leading" secondItem="Ic6-Dl-IMj" secondAttribute="leadingMargin" id="Eow-4F-gxU"/>
+                                            <constraint firstItem="1mJ-ma-EDf" firstAttribute="top" secondItem="Ic6-Dl-IMj" secondAttribute="topMargin" id="Zfx-Rr-1cP"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Ic6-Dl-IMj" secondAttribute="bottom" id="2IY-AZ-2G9"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ic6-Dl-IMj" secondAttribute="trailing" id="CXv-lq-oCK"/>
+                                    <constraint firstItem="Ic6-Dl-IMj" firstAttribute="top" secondItem="f7L-aU-wKA" secondAttribute="top" id="j1r-HA-200"/>
+                                    <constraint firstItem="Ic6-Dl-IMj" firstAttribute="leading" secondItem="f7L-aU-wKA" secondAttribute="leading" id="pAj-Vt-4p9"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ic6-Dl-IMj" firstAttribute="width" secondItem="YcS-Z0-kZf" secondAttribute="width" id="5Gh-l3-Scg"/>
+                            <constraint firstAttribute="trailing" secondItem="f7L-aU-wKA" secondAttribute="trailing" id="ASg-tK-uB3"/>
+                            <constraint firstAttribute="bottom" secondItem="f7L-aU-wKA" secondAttribute="bottom" id="S3n-Mt-aKK"/>
+                            <constraint firstItem="f7L-aU-wKA" firstAttribute="leading" secondItem="YcS-Z0-kZf" secondAttribute="leading" id="Th9-eS-rkf"/>
+                            <constraint firstItem="f7L-aU-wKA" firstAttribute="top" secondItem="YcS-Z0-kZf" secondAttribute="top" id="t4M-Sj-pka"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Feedback" id="Q01-44-2na">
+                        <barButtonItem key="leftBarButtonItem" title="Done" style="done" id="1OQ-XB-Jh9">
+                            <connections>
+                                <segue destination="oZC-2P-xVQ" kind="unwind" unwindAction="unwindToTrackSymptomsRootViewController:" id="9By-WU-sf8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="feedbackTextView" destination="Y4E-BG-52y" id="utl-0z-Y6q"/>
+                        <outlet property="scoreLabel" destination="1ku-Lq-YIS" id="fdO-go-NBU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XgB-qs-ean" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oZC-2P-xVQ" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2484" y="-77"/>
+        </scene>
+        <!--Too Early-->
+        <scene sceneID="nID-RT-CQ8">
+            <objects>
+                <viewController id="TRR-T7-y9p" customClass="PTSTrackSymptomsTooEarlyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="guQ-JM-nh1"/>
+                        <viewControllerLayoutGuide type="bottom" id="x22-Bj-OaR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="x77-d4-pLo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WQl-Px-wsP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nxx-6t-LLR" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="168"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="7Ia-La-L30">
+                                                <rect key="frame" x="20" y="8" width="560" height="152"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEr-hQ-aOl" customClass="PTSDynamicTypeLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="62"/>
+                                                        <animations/>
+                                                        <string key="text">It has been less than a week since you last took the self-assessment.  The questions are designed to assess your symptoms since the last time you answered, so it is not helpful to take it more than once a week.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6qs-0H-ifv">
+                                                        <rect key="frame" x="0.0" y="82" width="560" height="70"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-3V-gyb">
+                                                                <rect key="frame" x="0.0" y="0.0" width="560" height="70"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSP-3t-wia">
+                                                                        <rect key="frame" x="230" y="0.0" width="101" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Set a reminder"/>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53U-BQ-RQJ">
+                                                                        <rect key="frame" x="242" y="40" width="77" height="30"/>
+                                                                        <animations/>
+                                                                        <state key="normal" title="Take it now"/>
+                                                                    </button>
+                                                                </subviews>
+                                                                <animations/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <animations/>
+                                                    </stackView>
+                                                </subviews>
+                                                <animations/>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottomMargin" secondItem="7Ia-La-L30" secondAttribute="bottom" id="Sxw-aW-gJ2"/>
+                                            <constraint firstItem="7Ia-La-L30" firstAttribute="leading" secondItem="nxx-6t-LLR" secondAttribute="leadingMargin" id="rSF-kE-Vgp"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="7Ia-La-L30" secondAttribute="trailing" id="w8f-iB-FyY"/>
+                                            <constraint firstItem="7Ia-La-L30" firstAttribute="top" secondItem="nxx-6t-LLR" secondAttribute="topMargin" id="xlK-7A-cWd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="nxx-6t-LLR" secondAttribute="trailing" id="C9o-sx-yqY"/>
+                                    <constraint firstAttribute="bottom" secondItem="nxx-6t-LLR" secondAttribute="bottom" id="HsE-dn-pIY"/>
+                                    <constraint firstItem="nxx-6t-LLR" firstAttribute="leading" secondItem="WQl-Px-wsP" secondAttribute="leading" id="bQ4-sZ-37e"/>
+                                    <constraint firstItem="nxx-6t-LLR" firstAttribute="top" secondItem="WQl-Px-wsP" secondAttribute="top" id="myS-WP-ney"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WQl-Px-wsP" firstAttribute="leading" secondItem="x77-d4-pLo" secondAttribute="leading" id="1eF-ZJ-JdR"/>
+                            <constraint firstItem="nxx-6t-LLR" firstAttribute="width" secondItem="x77-d4-pLo" secondAttribute="width" id="984-Fy-zap"/>
+                            <constraint firstItem="WQl-Px-wsP" firstAttribute="top" secondItem="x77-d4-pLo" secondAttribute="topMargin" id="K0F-vI-c6x"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="WQl-Px-wsP" secondAttribute="bottom" id="YHS-xH-fP7"/>
+                            <constraint firstAttribute="trailing" secondItem="WQl-Px-wsP" secondAttribute="trailing" id="znd-vv-DpX"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Too Early" id="LuI-1F-kgU"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fqs-Pd-Eab" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="-1511"/>
+        </scene>
+        <!--No History-->
+        <scene sceneID="rEK-Zu-hyQ">
+            <objects>
+                <viewController id="Upy-ai-zlS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ytK-fz-Kbi"/>
+                        <viewControllerLayoutGuide type="bottom" id="fPJ-sL-p73"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="82c-Wb-EVQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zjf-Nb-On7">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xz6-4z-JRi" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="141"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vYd-sb-fyd">
+                                                <rect key="frame" x="20" y="8" width="560" height="125"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvA-cs-fFp" customClass="PTSDynamicTypeLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="560" height="125"/>
+                                                        <animations/>
+                                                        <string key="text">Once you take the self-assessment your results will show up here as a graph. You can watch your scores change over time. Remember, no one will see your results other than you. This is an opportunity to get feedback on how severe your symptoms are, and if you are getting better or worse over time. To take the self-assessment now, tap “Back” and then tap “Take Assessment” on the main Assess screen.</string>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <animations/>
+                                            </stackView>
+                                        </subviews>
+                                        <animations/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailingMargin" secondItem="vYd-sb-fyd" secondAttribute="trailing" id="LXi-Qr-n5e"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="vYd-sb-fyd" secondAttribute="bottom" id="NhH-NJ-LYx"/>
+                                            <constraint firstItem="vYd-sb-fyd" firstAttribute="top" secondItem="Xz6-4z-JRi" secondAttribute="topMargin" id="YDe-0Y-C48"/>
+                                            <constraint firstItem="vYd-sb-fyd" firstAttribute="leading" secondItem="Xz6-4z-JRi" secondAttribute="leadingMargin" id="icc-4L-6zF"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstItem="Xz6-4z-JRi" firstAttribute="leading" secondItem="Zjf-Nb-On7" secondAttribute="leading" id="05Y-40-32e"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xz6-4z-JRi" secondAttribute="trailing" id="LNi-vG-i3T"/>
+                                    <constraint firstItem="Xz6-4z-JRi" firstAttribute="top" secondItem="Zjf-Nb-On7" secondAttribute="top" id="iES-8d-IjU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xz6-4z-JRi" secondAttribute="bottom" id="rB5-qW-cm7"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Zjf-Nb-On7" secondAttribute="bottom" id="Peg-Ct-RKy"/>
+                            <constraint firstItem="Xz6-4z-JRi" firstAttribute="width" secondItem="82c-Wb-EVQ" secondAttribute="width" id="YQF-US-evt"/>
+                            <constraint firstItem="Zjf-Nb-On7" firstAttribute="leading" secondItem="82c-Wb-EVQ" secondAttribute="leading" id="gyN-HH-bms"/>
+                            <constraint firstAttribute="trailing" secondItem="Zjf-Nb-On7" secondAttribute="trailing" id="zaN-Jh-xYN"/>
+                            <constraint firstItem="Zjf-Nb-On7" firstAttribute="top" secondItem="82c-Wb-EVQ" secondAttribute="top" id="zfF-O5-6Qt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="No History" id="u8n-sc-XGb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNr-Zw-K5C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1071" y="-826"/>
+        </scene>
+        <!--Track-->
+        <scene sceneID="IpD-Lb-cF0">
+            <objects>
+                <navigationController title="Track" id="yAe-mD-Osx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GYL-yS-Bcb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kXT-rx-34V" kind="relationship" relationship="rootViewController" id="Acj-I1-b16"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9CG-MV-1vQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-606" y="294"/>
+        </scene>
+        <!--Assessments List View Controller-->
+        <scene sceneID="8fa-28-iQ2">
+            <objects>
+                <tableViewController storyboardIdentifier="AssessmentsListViewControllerIdentifier" id="NTs-0m-Dy0" customClass="PTSAssessmentsListViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="neb-TM-imb">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="NTs-0m-Dy0" id="ANz-6k-sEW"/>
+                            <outlet property="delegate" destination="NTs-0m-Dy0" id="uYR-bv-rjc"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgK-HH-hf1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269" y="1819.5"/>
+        </scene>
+        <!--Assessments Graph View Controller-->
+        <scene sceneID="ONe-47-HP0">
+            <objects>
+                <viewController storyboardIdentifier="AssessmentsGraphViewControllerIdentifier" id="fp6-rQ-XjY" customClass="PTSAssessmentsGraphViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o9g-vX-pei"/>
+                        <viewControllerLayoutGuide type="bottom" id="UFd-kp-K5Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sBQ-6e-MQN">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="487"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifV-KQ-0aO">
+                                <rect key="frame" x="50" y="201" width="200" height="200"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Eig-Mv-B6B"/>
+                                    <constraint firstAttribute="width" constant="200" id="qO4-Sx-Wqb"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Graph View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O77-yR-UqC">
+                                <rect key="frame" x="106" y="409" width="89" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="O77-yR-UqC" firstAttribute="top" secondItem="ifV-KQ-0aO" secondAttribute="bottom" constant="8" symbolic="YES" id="NlO-bx-VAw"/>
+                            <constraint firstItem="ifV-KQ-0aO" firstAttribute="centerX" secondItem="sBQ-6e-MQN" secondAttribute="centerX" id="b8G-zo-BSH"/>
+                            <constraint firstItem="O77-yR-UqC" firstAttribute="top" secondItem="sBQ-6e-MQN" secondAttribute="topMargin" constant="60" id="dbX-MU-yQ8"/>
+                            <constraint firstItem="O77-yR-UqC" firstAttribute="centerX" secondItem="sBQ-6e-MQN" secondAttribute="centerX" id="hqn-4Q-DOf"/>
+                            <constraint firstItem="ifV-KQ-0aO" firstAttribute="centerY" secondItem="sBQ-6e-MQN" secondAttribute="centerY" id="lvR-ic-W12"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="dbX-MU-yQ8"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9VF-5O-bes" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="1819.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TabBar - Track Symptoms Icon" width="15" height="12"/>
+    </resources>
+</document>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<array>
+		<string>Go clothes shopping.</string>
+		<string>Go window shopping</string>
+		<string>Buy yourself a small gift.</string>
+		<string>Buy yourself flowers.</string>
+		<string>Buy yourself music.</string>
+		<string>Get a manicure and/or pedicure.</string>
+		<string>Get a massage.</string>
+		<string>Go bowling.</string>
+		<string>Go listen to music.</string>
+		<string>Go out for ice cream.</string>
+		<string>Go out to dinner.</string>
+		<string>Go sightseeing.</string>
+		<string>Go to a bookstore and read.</string>
+		<string>Go to a coffee shop to read and have coffee/tea.</string>
+		<string>Go to a live performance or play.</string>
+		<string>Go to a museum.</string>
+		<string>Go to church/temple/mosque.</string>
+		<string>Go to the movies.</string>
+		<string>Go watch horse racing or auto racing.</string>
+		<string>Play a sport.</string>
+		<string>Play pool.</string>
+		<string>Take a class in a craft, a language, or a dance.</string>
+		<string>Volunteer at a soup kitchen or animal shelter.</string>
+	</array>
+</plist>
